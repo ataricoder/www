@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "./header/header";
 
 const layoutStyle = {
 	margin: 20,
@@ -6,11 +6,11 @@ const layoutStyle = {
 	border: "1px solid #DDD"
 };
 
-const Layout = props => (
+const Page = props => (
 	<div style={layoutStyle}>
 		<Header />
 		{props.children}
 	</div>
 );
 
-export default Layout;
+export default Page;
