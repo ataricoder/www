@@ -17,6 +17,11 @@ const Header = () => (
 				About
 			</a>
 		</Link>
+		<Link href="/batman">
+			<a style={linkStyle} title="Batman Page">
+				Batman
+			</a>
+		</Link>
 	</div>
 );
 

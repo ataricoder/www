@@ -8,7 +8,7 @@ const Batman = props => (
 		<ul>
 			{props.shows.map(show => (
 				<li key={show.id}>
-					<Link href="/blog/[slug]" as={`/blog/${show.id}`}>
+					<Link href="/batman/[slug]" as={`/batman/${show.id}`}>
 						<a>{show.name}</a>
 					</Link>
 				</li>
