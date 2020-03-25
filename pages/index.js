@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Layout from "@components/Layout";
+import Page from "@components/page";
 
 const PostLink = props => (
 	<li>
@@ -11,13 +11,13 @@ const PostLink = props => (
 
 export default function Blog() {
 	return (
-		<Layout>
+		<Page>
 			<h1>My Blog</h1>
 			<ul>
 				<PostLink id="Hello Next.js" />
 				<PostLink id="Learn Next.js is awesome" />
 				<PostLink id="Deploy apps with Zeit" />
 			</ul>
-		</Layout>
+		</Page>
 	);
 }
