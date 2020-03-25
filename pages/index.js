@@ -17,6 +17,11 @@ export default function Blog() {
 				<PostLink id="Hello Next.js" />
 				<PostLink id="Learn Next.js is awesome" />
 				<PostLink id="Deploy apps with Zeit" />
+				<li>
+					<Link href="/batman">
+						<a title="Batman.js">Batman.js</a>
+					</Link>
+				</li>
 			</ul>
 		</Page>
 	);
