@@ -1,4 +1,5 @@
 import Header from "./header/header";
+import Head from "next/head";
 
 const layoutStyle = {
 	margin: 20,
@@ -8,6 +9,9 @@ const layoutStyle = {
 
 const Page = props => (
 	<div style={layoutStyle}>
+		<Head>
+			<title>ataricoder</title>
+		</Head>
 		<Header />
 		{props.children}
 	</div>
