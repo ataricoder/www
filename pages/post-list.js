@@ -7,6 +7,9 @@ export default function PostList() {
 	return (
 		<Page>
 			<p>Post list Page</p>
+			{postlist.map(post => (
+				<h1>{post.title}</h1>
+			))}
 		</Page>
 	);
 }
