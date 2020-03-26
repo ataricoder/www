@@ -1,6 +1,15 @@
 import Page from "@components/page";
 import Markdown from "react-markdown";
 import postlist from "../data/blog.json";
+import Link from "next/link";
+
+const ArticleLink = ({ article }) => (
+	<li>
+		<Link href="/articles/[slug]" as={`/articles/${article.id}`}>
+			<a>{article.title}</a>
+		</Link>
+	</li>
+);
 
 export default function PostList() {
 	console.log(postlist);
@@ -8,13 +17,7 @@ export default function PostList() {
 		<Page>
 			<p>Post list Page</p>
 			{postlist.map(post => (
-				<div>
-					<h1>{post.title}</h1>
-					<p>
-						{post.date} by {post.author}
-					</p>
-					<Markdown source={post.content} escapeHtml={false} />
-				</div>
+				<ArticleLink key={post.id} article={post} />
 			))}
 		</Page>
 	);

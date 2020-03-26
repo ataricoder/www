@@ -22,6 +22,11 @@ const Header = () => (
 				Batman
 			</a>
 		</Link>
+		<Link href="/post-list">
+			<a style={linkStyle} title="Posts Page">
+				Posts
+			</a>
+		</Link>
 	</div>
 );
 
