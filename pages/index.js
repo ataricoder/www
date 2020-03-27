@@ -45,6 +45,7 @@ export default function Blog() {
 			<style jsx>{`
 				h1,
 				a {
+					color: white;
 					font-family: "Arial";
 				}
 

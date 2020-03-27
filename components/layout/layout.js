@@ -3,12 +3,12 @@ import Header from "../header/header";
 import styles from "./layout.module.css";
 
 const Layout = props => (
-	<div className={styles.wrapper}>
+	<div className={styles.layout}>
 		<Head>
 			<title>ataricoder</title>
 		</Head>
 		<Header />
-		{props.children}
+		<div className={styles.content}>{props.children}</div>
 	</div>
 );
 

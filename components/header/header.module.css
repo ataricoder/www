@@ -1,3 +1,39 @@
 .navbar {
-	background-color: #191a1b;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: rgb(25, 26, 27, 0.8);
+}
+
+.group {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	align-items: center;
+	justify-items: center;
+	height: 46px;
+}
+
+.link {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+	color: beige;
+}
+
+@media (max-width: 640px) {
+	.navbar {
+	}
+
+	.group {
+		grid-template-columns: repeat(2, auto);
+	}
+
+	.navbar a:nth-child(2) {
+		display: none;
+	}
+	.navbar a:nth-child(3) {
+		display: none;
+	}
 }
