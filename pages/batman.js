@@ -1,9 +1,9 @@
-import Page from "@components/page";
+import Layout from "@components/layout/layout";
 import Link from "next/link";
 import fetch from "isomorphic-unfetch";
 
 const Batman = props => (
-	<Page>
+	<Layout>
 		<h1>Batman TV Shows</h1>
 		<ul>
 			{props.shows.map(show => (
@@ -14,7 +14,7 @@ const Batman = props => (
 				</li>
 			))}
 		</ul>
-	</Page>
+	</Layout>
 );
 
 Batman.getInitialProps = async function() {

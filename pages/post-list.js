@@ -1,4 +1,4 @@
-import Page from "@components/page";
+import Layout from "@components/layout/layout";
 import Markdown from "react-markdown";
 import postlist from "../data/blog.json";
 import Link from "next/link";
@@ -12,13 +12,13 @@ const ArticleLink = ({ article }) => (
 );
 
 export default function PostList() {
-	console.log(postlist);
+	// console.log(postlist);
 	return (
-		<Page>
+		<Layout>
 			<p>Post list Page</p>
 			{postlist.map(post => (
 				<ArticleLink key={post.id} article={post} />
 			))}
-		</Page>
+		</Layout>
 	);
 }
