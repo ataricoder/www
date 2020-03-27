@@ -17,7 +17,6 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"server": "node lib/get-posts.js",
-		"test": "node lib/test.js"
+		"server": "node lib/get-posts.js"
 	}
 }

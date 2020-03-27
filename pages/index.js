@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Page from "@components/page";
+import Layout from "@components/layout/layout";
 
 function getPosts() {
 	return [
@@ -35,8 +35,8 @@ const PostLink = ({ post }) => (
 
 export default function Blog() {
 	return (
-		<Page>
-			<h1>My Blog</h1>
+		<Layout>
+			<h1>Front Internal Page</h1>
 			<ul>
 				{getPosts().map(post => (
 					<PostLink key={post.slug} post={post} />
@@ -45,6 +45,7 @@ export default function Blog() {
 			<style jsx>{`
 				h1,
 				a {
+					color: white;
 					font-family: "Arial";
 				}
 
@@ -66,6 +67,6 @@ export default function Blog() {
 					opacity: 0.6;
 				}
 			`}</style>
-		</Page>
+		</Layout>
 	);
 }

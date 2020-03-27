@@ -1,12 +1,12 @@
-import Page from "@components/page";
+import Layout from "@components/layout/layout";
 import fetch from "isomorphic-unfetch";
 
 const Show = props => (
-	<Page>
+	<Layout>
 		<h1>{props.show.name}</h1>
 		<p>{props.show.summary.replace(/<[/]?[pb]>/g, "")}</p>
 		{props.show.image ? <img src={props.show.image.medium} /> : null}
-	</Page>
+	</Layout>
 );
 
 Show.getInitialProps = async function(context) {
