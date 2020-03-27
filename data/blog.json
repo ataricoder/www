@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1576476000,
+		"title": "Rick and Morty is awesome",
+		"author": "Daniel Munoz",
+		"date": "December 16, 2019",
+		"content": "\n# Rick and Morty\n\nRick, you son a bitch! I'm in!\n"
+	},
+	{
+		"id": 1576130400,
+		"title": "Hello World",
+		"author": "Susan Thomas",
+		"date": "December 12, 2019",
+		"content": "\n# Hey Everyone!\n\n_My blog is better than Dave's_\n"
+	},
+	{
+		"id": 1576044000,
+		"title": "My First Post, Yo!",
+		"author": "Dave Jones",
+		"date": "December 11, 2019",
+		"content": "\n# Welcome to My Blog\n\n_It's a beautiful thing._\n"
+	}
+]
