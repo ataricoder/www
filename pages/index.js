@@ -36,7 +36,7 @@ const PostLink = ({ post }) => (
 export default function Blog() {
 	return (
 		<Page>
-			<h1>My Blog</h1>
+			<h1>Post Branch</h1>
 			<ul>
 				{getPosts().map(post => (
 					<PostLink key={post.slug} post={post} />
