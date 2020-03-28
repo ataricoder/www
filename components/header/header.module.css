@@ -7,9 +7,10 @@
 }
 
 .group {
+	max-width: 800px;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(6, auto);
+	grid-template-columns: repeat(4, auto);
 	align-items: center;
 	justify-items: center;
 	height: 46px;

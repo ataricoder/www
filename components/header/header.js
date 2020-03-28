@@ -4,7 +4,6 @@ import styles from "./header.module.css";
 const Header = () => (
 	<nav className={styles.navbar}>
 		<div className={styles.group}>
-			<div></div>
 			<Link href="/">
 				<a className={styles.link} title="Home Page">
 					Home
@@ -25,7 +24,6 @@ const Header = () => (
 					Posts
 				</a>
 			</Link>
-			<div></div>
 		</div>
 	</nav>
 );
