@@ -44,6 +44,7 @@
 	}
 
 	.group {
+		max-width: 760px;
 		grid-template-columns: repeat(2, auto);
 	}
 
