@@ -7,6 +7,7 @@ const Layout = props => (
 	<div className={styles.layout}>
 		<Head>
 			<title>ataricoder</title>
+			<link rel="shortcut icon" href="/favicon.png" />
 		</Head>
 		<Header />
 		<div className={styles.content}>{props.children}</div>
