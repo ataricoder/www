@@ -16,6 +16,16 @@
 	height: 46px;
 }
 
+.mobileGroup {
+	max-width: 800px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	align-items: center;
+	justify-items: center;
+	height: 46px;
+}
+
 .link {
 	width: 75%;
 	height: 75%;
@@ -50,19 +60,14 @@
 	border-radius: 4px;
 }
 
-@media (max-width: 640px) {
-	.navbar {
-	}
-
-	.group {
-		max-width: 760px;
-		grid-template-columns: repeat(2, auto);
-	}
-
-	.navbar a:nth-child(2) {
+@media (min-width: 640px) {
+	.mobileGroup {
 		display: none;
 	}
-	.navbar a:nth-child(3) {
+}
+
+@media (max-width: 640px) {
+	.group {
 		display: none;
 	}
 }

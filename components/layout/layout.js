@@ -3,7 +3,7 @@ import Header from "../header/header";
 import styles from "./layout.module.css";
 import Footer from "../footer/footer";
 
-const Layout = props => (
+const Layout = (props) => (
 	<div className={styles.layout}>
 		<Head>
 			<title>ataricoder</title>

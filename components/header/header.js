@@ -34,6 +34,19 @@ const Header = () => {
 					</a>
 				</Link>
 			</div>
+
+			<div className={styles.mobileGroup}>
+				<Link href="/">
+					<a className={styles.link + " " + home} title="Home Page">
+						Home
+					</a>
+				</Link>
+				<Link href="/about">
+					<a className={styles.link + " " + about} title="About Page">
+						About
+					</a>
+				</Link>
+			</div>
 		</nav>
 	);
 };
