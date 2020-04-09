@@ -10,15 +10,6 @@ const Header = () => {
 	const bat = router.pathname == "/batman" ? styles.active : "";
 	const posts = router.pathname == "/post-list" ? styles.active : "";
 
-	function myFunction() {
-		var x = document.getElementById("mobileGroup");
-		if (x.className === "mobileGroup") {
-			x.className += " responsive";
-		} else {
-			x.className = "mobileGroup";
-		}
-	}
-
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.group}>

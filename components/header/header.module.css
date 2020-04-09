@@ -65,7 +65,7 @@
 		grid-template-rows: repeat(4, auto);
 		grid-template-columns: none;
 		grid-row-gap: 0px;
-		height: 262px;
+		height: 184px;
 	}
 	.Burger {
 		display: block;
