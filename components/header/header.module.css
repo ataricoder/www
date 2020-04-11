@@ -34,23 +34,40 @@
 }
 
 .link:active {
+	background-color: rgb(251, 251, 252, 0.04);
+	border-radius: 4px;
+}
+
+.active {
 	color: rgb(255, 149, 0);
 	background-color: rgb(255, 149, 0, 0.04);
 	border-radius: 4px;
 }
 
+.active:hover {
+	color: rgb(255, 149, 0);
+	background-color: rgb(255, 149, 0, 0.08);
+	border-radius: 4px;
+}
+
+.Burger {
+	display: none;
+}
+
+@media (min-width: 640px) {
+	.mobileGroup {
+		display: none;
+	}
+}
+
 @media (max-width: 640px) {
-	.navbar {
-	}
-
 	.group {
-		grid-template-columns: repeat(2, auto);
+		grid-template-rows: repeat(4, auto);
+		grid-template-columns: none;
+		grid-row-gap: 0px;
+		height: 184px;
 	}
-
-	.navbar a:nth-child(2) {
-		display: none;
-	}
-	.navbar a:nth-child(3) {
-		display: none;
+	.Burger {
+		display: block;
 	}
 }
