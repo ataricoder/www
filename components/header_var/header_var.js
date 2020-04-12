@@ -22,6 +22,8 @@ const Header2 = () => (
 				bg="dark"
 				variant="dark"
 				fixed="top"
+				className={styles.testNav}
+				// Use bsPrefix for custom class
 			>
 				<Navbar.Brand href="/">ataricoder</Navbar.Brand>
 				<Navbar.Toggle
