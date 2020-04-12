@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../header/header";
 import styles from "./layout.module.css";
 import Footer from "../footer/footer";
+import Header2 from "../header_var/header_var";
 
 const Layout = (props) => (
 	<div className={styles.layout}>
@@ -15,7 +16,7 @@ const Layout = (props) => (
 				crossOrigin="anonymous"
 			></link>
 		</Head>
-		<Header />
+		<Header2 />
 		<div className={styles.content}>{props.children}</div>
 		<Footer />
 	</div>
