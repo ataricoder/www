@@ -2,6 +2,8 @@ import Head from "next/head";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Button from "react-bootstrap/Button";
+import styles from "./header_var.module.css";
 
 const Header2 = () => (
 	<div>
@@ -22,7 +24,12 @@ const Header2 = () => (
 				fixed="top"
 			>
 				<Navbar.Brand href="/">ataricoder</Navbar.Brand>
-				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Toggle
+					className={styles.navWrapper}
+					aria-controls="responsive-navbar-nav"
+				>
+					<Button variant="primary">Primary</Button>
+				</Navbar.Toggle>
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto">
 						<Nav.Link href="/about">About</Nav.Link>
