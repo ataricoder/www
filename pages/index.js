@@ -5,7 +5,7 @@ function getPosts() {
 	return [
 		{ slug: "hello-nextjs", title: "Hello Next.js" },
 		{ slug: "learn-nextjs", title: "Learn Next.js is awesome" },
-		{ slug: "deploy-nextjs", title: "Deploy apps with ZEIT" }
+		{ slug: "deploy-nextjs", title: "Deploy apps with ZEIT" },
 	];
 }
 
@@ -37,8 +37,11 @@ export default function Blog() {
 	return (
 		<Layout>
 			<h1>Front Internal Page</h1>
+			<button type="button" className="btn btn-primary">
+				Primary
+			</button>
 			<ul>
-				{getPosts().map(post => (
+				{getPosts().map((post) => (
 					<PostLink key={post.slug} post={post} />
 				))}
 			</ul>
