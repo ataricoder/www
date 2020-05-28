@@ -61,7 +61,7 @@ const Header = () => {
 					className={styles.testNav + " " + scrolled}
 					// Use bsPrefix for custom class
 				>
-					<Navbar.Brand href="/">ataricoder</Navbar.Brand>
+					<Navbar.Brand href="/">👾</Navbar.Brand>
 					<Navbar.Toggle
 						className={styles.navWrapper}
 						aria-controls="responsive-navbar-nav"
