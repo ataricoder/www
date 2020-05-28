@@ -1,8 +1,8 @@
 {
-	"name": "ataricoder",
+	"name": "www",
 	"version": "1.0.0",
 	"main": "index.js",
-	"repository": "https://github.com/ataricoder/ataricoder.git",
+	"repository": "https://github.com/ataricoder/www.git",
 	"author": "Daniel Munoz <ataricoder@gmail.com>",
 	"license": "MIT",
 	"dependencies": {

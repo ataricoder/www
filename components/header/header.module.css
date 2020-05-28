@@ -1,73 +1,15 @@
-.navbar {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 100;
-	background-color: rgb(25, 26, 27, 0.8);
+.scrolled {
+	background-color: red !important;
 }
 
-.group {
-	max-width: 800px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	align-items: center;
-	justify-items: center;
-	height: 46px;
+.testNav {
+	background-color: black;
+}
+
+.link_active {
+	background-color: bisque !important;
 }
 
 .link {
-	width: 75%;
-	height: 75%;
-	display: grid;
-	align-items: center;
-	justify-items: center;
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 14px;
-	color: beige;
-}
-
-.link:hover {
-	background-color: rgb(251, 251, 252, 0.04);
-	border-radius: 4px;
-}
-
-.link:active {
-	background-color: rgb(251, 251, 252, 0.04);
-	border-radius: 4px;
-}
-
-.active {
-	color: rgb(255, 149, 0);
-	background-color: rgb(255, 149, 0, 0.04);
-	border-radius: 4px;
-}
-
-.active:hover {
-	color: rgb(255, 149, 0);
-	background-color: rgb(255, 149, 0, 0.08);
-	border-radius: 4px;
-}
-
-.Burger {
-	display: none;
-}
-
-@media (min-width: 640px) {
-	.mobileGroup {
-		display: none;
-	}
-}
-
-@media (max-width: 640px) {
-	.group {
-		grid-template-rows: repeat(4, auto);
-		grid-template-columns: none;
-		grid-row-gap: 0px;
-		height: 184px;
-	}
-	.Burger {
-		display: block;
-	}
+	background-color: blue;
 }
