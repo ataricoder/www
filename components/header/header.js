@@ -41,7 +41,7 @@ const Header = () => {
 	const projects = router.pathname == "/projects" ? styles.link_active : "";
 	const bookmarks = router.pathname == "/bookmarks" ? styles.link_active : "";
 	const batman = router.pathname == "/batman" ? styles.link_active : "";
-	const posts = router.pathname == "/post-list" ? desktop.link_active : "";
+	const posts = router.pathname == "/post-list" ? styles.link_active : "";
 
 	// MARK: Render
 	return (
