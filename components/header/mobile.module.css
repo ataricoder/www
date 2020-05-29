@@ -1,13 +1,23 @@
+.scrolled {
+	box-shadow: 0 0 0 1px #ffffff20 !important;
+}
+
 .navbar {
 	background-color: #00000090;
 	backdrop-filter: saturate(180%) blur(20px);
 }
 
-.link_group {
-	color: white !important;
+.link {
+	font-size: 18px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	margin: 0px 4px;
+	color: #ffffff !important;
+	font-weight: 600;
+	margin-left: 0px;
 }
 
-.link {
+.link_group {
 	color: white !important;
 }
 
