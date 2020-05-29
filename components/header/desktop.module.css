@@ -38,26 +38,3 @@
 .btn-primary {
 	width: 20px !important;
 }
-
-@media (max-width: 992px) {
-	.navbar {
-		padding: 0 8px !important;
-	}
-	.link_group {
-		display: grid;
-		grid-template-columns: none;
-		grid-template-rows: repeat(6, 46px);
-	}
-	.link {
-		text-align: left;
-		padding: 10px 20px !important;
-	}
-	.dropdown {
-		margin-top: 3px;
-		background-color: #00000090;
-		backdrop-filter: saturate(180%) blur(20px);
-	}
-	.navbar-toggler {
-		border: none !important;
-	}
-}
