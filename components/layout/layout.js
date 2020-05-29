@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import Footer from "../footer/footer";
-import Header from "../header/header";
+import Footer from "@components/footer/footer";
+import Header from "@components/header/header";
 const Layout = (props) => (
 	<div className={styles.layout}>
 		<Head>

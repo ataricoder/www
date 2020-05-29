@@ -1,9 +1,0 @@
-.navWrapper {
-	padding: 0;
-	margin: 0;
-}
-
-.testNav {
-	background-color: rgb(25, 26, 27, 0.8) !important;
-	backdrop-filter: saturate(180%) blur(20px);
-}
