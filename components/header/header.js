@@ -41,7 +41,8 @@ const Header = () => {
 			}
 		});
 	});
-	const scrolled = scroll == true ? desktop.scrolled : "";
+	const desktop_scrolled = scroll == true ? desktop.scrolled : "";
+	const mobile_scrolled = scroll == true ? mobile.scrolled : "";
 
 	// MARK: Handle router and apply custom class with ternary operator
 	// useRouter is a hook, therefore can only be called inside the body of a function component
@@ -79,7 +80,7 @@ const Header = () => {
 						expand="lg"
 						variant="dark"
 						fixed="top"
-						className={desktop.navbar + " " + scrolled}
+						className={desktop.navbar + " " + desktop_scrolled}
 						// Use bsPrefix for custom class
 					>
 						<Navbar.Brand href="/">👾</Navbar.Brand>
@@ -133,31 +134,29 @@ const Header = () => {
 				</div>
 			</Desktop>
 			<Mobile>
-				<Navbar bg="light" expand="lg" fixed="top">
+				<Navbar
+					expand="lg"
+					fixed="top"
+					className={mobile.navbar + " " + mobile_scrolled}
+				>
 					<Navbar.Brand href="/">👾</Navbar.Brand>
-					<Navbar.Toggle aria-controls="basic-navbar-nav" />
-					<Navbar.Collapse id="basic-navbar-nav">
+					<Navbar.Toggle
+						aria-controls="basic-navbar-nav"
+						className={mobile.toggle}
+					/>
+					<Navbar.Collapse
+						id="basic-navbar-nav"
+						className={mobile.dropdown}
+					>
 						<Nav className="mr-auto">
-							<Nav.Link href="#home">Home</Nav.Link>
-							<Nav.Link href="#link">Link</Nav.Link>
-							<NavDropdown
-								title="Dropdown"
-								id="basic-nav-dropdown"
-							>
-								<NavDropdown.Item href="#action/3.1">
-									Action
-								</NavDropdown.Item>
-								<NavDropdown.Item href="#action/3.2">
-									Another action
-								</NavDropdown.Item>
-								<NavDropdown.Item href="#action/3.3">
-									Something
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-								<NavDropdown.Item href="#action/3.4">
-									Separated link
-								</NavDropdown.Item>
-							</NavDropdown>
+							<div className={mobile.link_group}>
+								<Nav.Link href="#home" className={mobile.link}>
+									Home
+								</Nav.Link>
+								<Nav.Link href="#link" className={mobile.link}>
+									Link
+								</Nav.Link>
+							</div>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

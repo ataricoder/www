@@ -1,0 +1,16 @@
+.navbar {
+	background-color: #00000090;
+	backdrop-filter: saturate(180%) blur(20px);
+}
+
+.link_group {
+	color: white !important;
+}
+
+.link {
+	color: white !important;
+}
+
+.toggle {
+	background-color: white !important;
+}
