@@ -154,7 +154,19 @@ const Header = () => {
 									Home
 								</Nav.Link>
 								<Nav.Link href="#link" className={mobile.link}>
-									Link
+									About
+								</Nav.Link>
+								<Nav.Link href="#link" className={mobile.link}>
+									Blog
+								</Nav.Link>
+								<Nav.Link href="#link" className={mobile.link}>
+									Music
+								</Nav.Link>
+								<Nav.Link href="#link" className={mobile.link}>
+									Projects
+								</Nav.Link>
+								<Nav.Link href="#link" className={mobile.link}>
+									Bookmarks
 								</Nav.Link>
 							</div>
 						</Nav>
