@@ -12,6 +12,19 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 // From CSS Modules
 import styles from "./header.module.css";
+// From Media Query for Component Modularization
+import { useMediaQuery } from "react-responsive";
+
+// MARK: Breakpoint separation using media queries
+// Breakpoints: Mobile & Tablets (<991px), Desktops (>992px)
+const Desktop = ({ children }) => {
+	const isDesktop = useMediaQuery({ minWidth: 992 });
+	return isDesktop ? children : null;
+};
+const Mobile = ({ children }) => {
+	const isMobile = useMediaQuery({ maxWidth: 991 });
+	return isMobile ? children : null;
+};
 
 // MARK: Function component: Header
 const Header = () => {
@@ -57,23 +70,17 @@ const Header = () => {
 				></link>
 			</Head>
 			{/* MARK: Body */}
-			<div>
-				<Navbar
-					collapseOnSelect
-					expand="lg"
-					variant="dark"
-					fixed="top"
-					className={styles.navbar + " " + scrolled}
-					// Use bsPrefix for custom class
-				>
-					<Navbar.Brand href="/">👾</Navbar.Brand>
-					<Navbar.Toggle aria-controls="responsive-navbar-nav">
-						Test
-					</Navbar.Toggle>
-					<Navbar.Collapse
-						id="responsive-navbar-nav"
-						className={styles.dropdown}
+			<Desktop>
+				<div>
+					<Navbar
+						collapseOnSelect
+						expand="lg"
+						variant="dark"
+						fixed="top"
+						className={styles.navbar + " " + scrolled}
+						// Use bsPrefix for custom class
 					>
+						<Navbar.Brand href="/">👾</Navbar.Brand>
 						<Nav className="ml-auto">
 							<div className={styles.link_group}>
 								<Nav.Link
@@ -120,9 +127,39 @@ const Header = () => {
 								</Nav.Link>
 							</div>
 						</Nav>
+					</Navbar>
+				</div>
+			</Desktop>
+			<Mobile>
+				<Navbar bg="light" expand="lg">
+					<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+					<Navbar.Toggle aria-controls="basic-navbar-nav" />
+					<Navbar.Collapse id="basic-navbar-nav">
+						<Nav className="mr-auto">
+							<Nav.Link href="#home">Home</Nav.Link>
+							<Nav.Link href="#link">Link</Nav.Link>
+							<NavDropdown
+								title="Dropdown"
+								id="basic-nav-dropdown"
+							>
+								<NavDropdown.Item href="#action/3.1">
+									Action
+								</NavDropdown.Item>
+								<NavDropdown.Item href="#action/3.2">
+									Another action
+								</NavDropdown.Item>
+								<NavDropdown.Item href="#action/3.3">
+									Something
+								</NavDropdown.Item>
+								<NavDropdown.Divider />
+								<NavDropdown.Item href="#action/3.4">
+									Separated link
+								</NavDropdown.Item>
+							</NavDropdown>
+						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
-			</div>
+			</Mobile>
 		</div>
 	);
 };
