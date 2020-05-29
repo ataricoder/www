@@ -34,8 +34,13 @@ const Header = () => {
 	// applies the class link_active if the router detects the url
 	const router = useRouter();
 	// Desktop custom active link classes
-	const batman = router.pathname == "/batman" ? styles.link_active : "";
+	const home = router.pathname == "/" ? styles.link_active : "";
 	const about = router.pathname == "/about" ? styles.link_active : "";
+	const blog = router.pathname == "/blog" ? styles.link_active : "";
+	const music = router.pathname == "/music" ? styles.link_active : "";
+	const projects = router.pathname == "/projects" ? styles.link_active : "";
+	const bookmarks = router.pathname == "/bookmarks" ? styles.link_active : "";
+	const batman = router.pathname == "/batman" ? styles.link_active : "";
 	const posts = router.pathname == "/post-list" ? desktop.link_active : "";
 
 	// MARK: Render
@@ -58,7 +63,7 @@ const Header = () => {
 					expand="lg"
 					variant="dark"
 					fixed="top"
-					className={styles.testNav + " " + scrolled}
+					className={styles.navbar + " " + scrolled}
 					// Use bsPrefix for custom class
 				>
 					<Navbar.Brand href="/">👾</Navbar.Brand>
@@ -69,25 +74,51 @@ const Header = () => {
 						<Button variant="primary">Primary</Button>
 					</Navbar.Toggle>
 					<Navbar.Collapse id="responsive-navbar-nav">
-						<Nav className="mr-auto">
-							<Nav.Link
-								href="/about"
-								className={styles.link + " " + about}
-							>
-								About
-							</Nav.Link>
-							<Nav.Link
-								href="/batman"
-								className={styles.link + " " + batman}
-							>
-								Batman
-							</Nav.Link>
-						</Nav>
-						<Nav>
-							<Nav.Link href="/post-list">Posts</Nav.Link>
-							<Nav.Link eventKey={2} href="#memes">
-								Dank memes
-							</Nav.Link>
+						<Nav className="ml-auto">
+							<div className={styles.link_group}>
+								<Nav.Link
+									href="/"
+									className={styles.link + " " + home}
+									title="Home"
+								>
+									Home
+								</Nav.Link>
+								<Nav.Link
+									href="/about"
+									className={styles.link + " " + about}
+									title="About"
+								>
+									About
+								</Nav.Link>
+								<Nav.Link
+									href="/blog"
+									className={styles.link + " " + blog}
+									title="Blog"
+								>
+									Blog
+								</Nav.Link>
+								<Nav.Link
+									href="/music"
+									className={styles.link + " " + music}
+									title="Music"
+								>
+									Music
+								</Nav.Link>
+								<Nav.Link
+									href="/projects"
+									className={styles.link + " " + projects}
+									title="Projects"
+								>
+									Projects
+								</Nav.Link>
+								<Nav.Link
+									href="/bookmarks"
+									className={styles.link + " " + bookmarks}
+									title="Bookmarks"
+								>
+									Bookmarks
+								</Nav.Link>
+							</div>
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>

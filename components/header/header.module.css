@@ -1,15 +1,36 @@
 .scrolled {
-	background-color: red !important;
+	box-shadow: 0 0 0 1px #ffffff20 !important;
 }
 
-.testNav {
-	background-color: black;
-}
-
-.link_active {
-	background-color: bisque !important;
+.navbar {
+	background-color: #00000090;
+	height: 47px;
+	backdrop-filter: saturate(180%) blur(20px);
+	padding: 0 64px !important;
 }
 
 .link {
-	background-color: blue;
+	font-size: 14px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0px 4px;
+	color: #ffffff !important;
+	font-weight: 600;
+}
+
+.link:hover {
+	background-color: #68fdfe20;
+	color: #68fdfe !important;
+}
+
+.link_active {
+	background-color: #68fdfe20;
+	color: #68fdfe !important;
+}
+
+.link_group {
+	display: grid;
+	grid-template-columns: repeat(6, 100px);
+	align-items: center;
 }
