@@ -67,13 +67,13 @@ const Header = () => {
 					// Use bsPrefix for custom class
 				>
 					<Navbar.Brand href="/">👾</Navbar.Brand>
-					<Navbar.Toggle
-						className={styles.navWrapper}
-						aria-controls="responsive-navbar-nav"
-					>
-						<Button variant="primary">Primary</Button>
+					<Navbar.Toggle aria-controls="responsive-navbar-nav">
+						Test
 					</Navbar.Toggle>
-					<Navbar.Collapse id="responsive-navbar-nav">
+					<Navbar.Collapse
+						id="responsive-navbar-nav"
+						className={styles.dropdown}
+					>
 						<Nav className="ml-auto">
 							<div className={styles.link_group}>
 								<Nav.Link
