@@ -15,6 +15,9 @@ import desktop from "./desktop.module.css";
 import mobile from "./mobile.module.css";
 // From Media Query for Component Modularization
 import { useMediaQuery } from "react-responsive";
+// From Feather Icons
+import { Menu } from "react-feather";
+import { X } from "react-feather";
 
 // MARK: Breakpoint separation using media queries
 // Breakpoints: Mobile & Tablets (<991px), Desktops (>992px)
@@ -29,6 +32,13 @@ const Mobile = ({ children }) => {
 
 // MARK: Function component: Header
 const Header = () => {
+	// MARK: Handle responsive menu
+	// Used to enable the menu div
+	// Used to toggle between the menu open and closed icons
+	const [openMenu, setMenuOpen] = useState(false);
+	function handleMenuOpen() {
+		setMenuOpen((wasOpened) => !wasOpened);
+	}
 	// Handle Scrolling Effect using useEffect, add custom class to mobile and desktop modules
 	const [scroll, setScrolled] = useState(false);
 	useEffect(() => {
@@ -170,10 +180,25 @@ const Header = () => {
 					className={mobile.navbar + " " + mobile_scrolled}
 				>
 					<Navbar.Brand href="/">👾</Navbar.Brand>
-					<Navbar.Toggle
-						aria-controls="basic-navbar-nav"
-						className={mobile.toggle}
-					/>
+					<Navbar.Toggle>
+						{openMenu && (
+							<Button
+								bsPrefix={mobile.mobile_navbar_toggle}
+								onClick={handleMenuOpen}
+							>
+								<X size={24} strokeWidth={3}></X>
+							</Button>
+						)}
+						{/* If state openMenu is false, then show the hamburger menu as the button icon */}
+						{!openMenu && (
+							<Button
+								bsPrefix={mobile.mobile_navbar_toggle}
+								onClick={handleMenuOpen}
+							>
+								<Menu size={24} strokeWidth={3}></Menu>
+							</Button>
+						)}
+					</Navbar.Toggle>
 					<Navbar.Collapse
 						id="basic-navbar-nav"
 						className={mobile.dropdown}
