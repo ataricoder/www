@@ -49,15 +49,33 @@ const Header = () => {
 	// applies the class link_active if the router detects the url
 	const router = useRouter();
 	// Desktop custom active link classes
-	const home = router.pathname == "/" ? desktop.link_active : "";
-	const about = router.pathname == "/about" ? desktop.link_active : "";
-	const blog = router.pathname == "/blog" ? desktop.link_active : "";
-	const music = router.pathname == "/music" ? desktop.link_active : "";
-	const projects = router.pathname == "/projects" ? desktop.link_active : "";
-	const bookmarks =
+	const home_desktop = router.pathname == "/" ? desktop.link_active : "";
+	const about_desktop =
+		router.pathname == "/about" ? desktop.link_active : "";
+	const blog_desktop = router.pathname == "/blog" ? desktop.link_active : "";
+	const music_desktop =
+		router.pathname == "/music" ? desktop.link_active : "";
+	const projects_desktop =
+		router.pathname == "/projects" ? desktop.link_active : "";
+	const bookmarks_desktop =
 		router.pathname == "/bookmarks" ? desktop.link_active : "";
-	const batman = router.pathname == "/batman" ? desktop.link_active : "";
-	const posts = router.pathname == "/post-list" ? desktop.link_active : "";
+	const batman_desktop =
+		router.pathname == "/batman" ? desktop.link_active : "";
+	const posts_desktop =
+		router.pathname == "/post-list" ? desktop.link_active : "";
+	// Mobile custom active link classes
+	const home_mobile = router.pathname == "/" ? mobile.link_active : "";
+	const about_mobile = router.pathname == "/about" ? mobile.link_active : "";
+	const blog_mobile = router.pathname == "/blog" ? mobile.link_active : "";
+	const music_mobile = router.pathname == "/music" ? mobile.link_active : "";
+	const projects_mobile =
+		router.pathname == "/projects" ? mobile.link_active : "";
+	const bookmarks_mobile =
+		router.pathname == "/bookmarks" ? mobile.link_active : "";
+	const batman_mobile =
+		router.pathname == "/batman" ? mobile.link_active : "";
+	const posts_mobile =
+		router.pathname == "/post-list" ? mobile.link_active : "";
 
 	// MARK: Render
 	return (
@@ -88,42 +106,54 @@ const Header = () => {
 							<div className={desktop.link_group}>
 								<Nav.Link
 									href="/"
-									className={desktop.link + " " + home}
+									className={
+										desktop.link + " " + home_desktop
+									}
 									title="Home"
 								>
 									Home
 								</Nav.Link>
 								<Nav.Link
 									href="/about"
-									className={desktop.link + " " + about}
+									className={
+										desktop.link + " " + about_desktop
+									}
 									title="About"
 								>
 									About
 								</Nav.Link>
 								<Nav.Link
 									href="/blog"
-									className={desktop.link + " " + blog}
+									className={
+										desktop.link + " " + blog_desktop
+									}
 									title="Blog"
 								>
 									Blog
 								</Nav.Link>
 								<Nav.Link
 									href="/music"
-									className={desktop.link + " " + music}
+									className={
+										desktop.link + " " + music_desktop
+									}
 									title="Music"
 								>
 									Music
 								</Nav.Link>
 								<Nav.Link
 									href="/projects"
-									className={desktop.link + " " + projects}
+									className={
+										desktop.link + " " + projects_desktop
+									}
 									title="Projects"
 								>
 									Projects
 								</Nav.Link>
 								<Nav.Link
 									href="/bookmarks"
-									className={desktop.link + " " + bookmarks}
+									className={
+										desktop.link + " " + bookmarks_desktop
+									}
 									title="Bookmarks"
 								>
 									Bookmarks
@@ -150,22 +180,44 @@ const Header = () => {
 					>
 						<Nav className="mr-auto">
 							<div className={mobile.link_group}>
-								<Nav.Link href="#home" className={mobile.link}>
+								<Nav.Link
+									href="#home"
+									className={mobile.link + " " + home_mobile}
+								>
 									Home
 								</Nav.Link>
-								<Nav.Link href="#link" className={mobile.link}>
+								<Nav.Link
+									href="#link"
+									className={mobile.link + " " + about_mobile}
+								>
 									About
 								</Nav.Link>
-								<Nav.Link href="#link" className={mobile.link}>
+								<Nav.Link
+									href="#link"
+									className={mobile.link + " " + blog_mobile}
+								>
 									Blog
 								</Nav.Link>
-								<Nav.Link href="#link" className={mobile.link}>
+								<Nav.Link
+									href="#link"
+									className={mobile.link + " " + music_mobile}
+								>
 									Music
 								</Nav.Link>
-								<Nav.Link href="#link" className={mobile.link}>
+								<Nav.Link
+									href="#link"
+									className={
+										mobile.link + " " + projects_mobile
+									}
+								>
 									Projects
 								</Nav.Link>
-								<Nav.Link href="#link" className={mobile.link}>
+								<Nav.Link
+									href="#link"
+									className={
+										mobile.link + " " + bookmarks_mobile
+									}
+								>
 									Bookmarks
 								</Nav.Link>
 							</div>
