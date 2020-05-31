@@ -206,31 +206,31 @@ const Header = () => {
 						<Nav className="mr-auto">
 							<div className={mobile.link_group}>
 								<Nav.Link
-									href="#home"
+									href="/"
 									className={mobile.link + " " + home_mobile}
 								>
 									Home
 								</Nav.Link>
 								<Nav.Link
-									href="#link"
+									href="/about"
 									className={mobile.link + " " + about_mobile}
 								>
 									About
 								</Nav.Link>
 								<Nav.Link
-									href="#link"
+									href="/blog"
 									className={mobile.link + " " + blog_mobile}
 								>
 									Blog
 								</Nav.Link>
 								<Nav.Link
-									href="#link"
+									href="/music"
 									className={mobile.link + " " + music_mobile}
 								>
 									Music
 								</Nav.Link>
 								<Nav.Link
-									href="#link"
+									href="/projects"
 									className={
 										mobile.link + " " + projects_mobile
 									}
@@ -238,7 +238,7 @@ const Header = () => {
 									Projects
 								</Nav.Link>
 								<Nav.Link
-									href="#link"
+									href="/bookmarks"
 									className={
 										mobile.link + " " + bookmarks_mobile
 									}
