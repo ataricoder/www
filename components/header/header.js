@@ -183,7 +183,7 @@ const Header = () => {
 					<Navbar.Toggle>
 						{openMenu && (
 							<Button
-								bsPrefix={mobile.mobile_navbar_toggle}
+								className={mobile.toggle}
 								onClick={handleMenuOpen}
 							>
 								<X size={24} strokeWidth={3}></X>
@@ -192,7 +192,7 @@ const Header = () => {
 						{/* If state openMenu is false, then show the hamburger menu as the button icon */}
 						{!openMenu && (
 							<Button
-								bsPrefix={mobile.mobile_navbar_toggle}
+								className={mobile.toggle}
 								onClick={handleMenuOpen}
 							>
 								<Menu size={24} strokeWidth={3}></Menu>

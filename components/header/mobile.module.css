@@ -17,10 +17,18 @@
 	margin-left: 0px;
 }
 
-.link_group {
-	color: white !important;
+.toggle {
+	border: none;
+	background-color: transparent;
+	color: #ffffff;
 }
 
-.toggle {
-	background-color: white !important;
+.toggle:hover {
+	background-color: transparent;
+}
+
+.toggle:active {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
 }
