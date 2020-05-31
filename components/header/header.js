@@ -180,7 +180,7 @@ const Header = () => {
 					className={mobile.navbar + " " + mobile_scrolled}
 				>
 					<Navbar.Brand href="/">👾</Navbar.Brand>
-					<Navbar.Toggle>
+					<Navbar.Toggle className={mobile.toggle_wrapper}>
 						{openMenu && (
 							<Button
 								className={mobile.toggle}

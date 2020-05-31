@@ -21,6 +21,7 @@
 	border: none;
 	background-color: transparent;
 	color: #ffffff;
+	padding: 0;
 }
 
 .toggle:hover {
@@ -31,4 +32,8 @@
 	background-color: transparent !important;
 	border: none !important;
 	box-shadow: none !important;
+}
+
+.toggle_wrapper {
+	padding: 0;
 }
