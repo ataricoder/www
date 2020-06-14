@@ -14,7 +14,9 @@ const Footer = () => (
 				crossOrigin="anonymous"
 			></link>
 		</Head>
-		<div className={styles.cardWrapper}>This is a footer</div>
+		<div className={styles.cardWrapper}>
+			I really need to get styling this
+		</div>
 	</div>
 );
 
