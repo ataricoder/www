@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./footer.module.css";
 import Head from "next/head";
 import Button from "react-bootstrap/Button";
+import { GitHub, Twitter, Dribbble } from "react-feather";
 
 const Footer = () => (
 	<div>
@@ -16,10 +17,18 @@ const Footer = () => (
 		<div className={styles.separator}></div>
 		<div className={styles.content}>
 			<div className={styles.left}>
-				<div>Copyright and Year</div>
-				<div>Github</div>
-				<div>Twitter</div>
-				<div>Dribble</div>
+				<div>2020 @ataricoder</div>
+				<GitHub size={20} strokeWidth={1.25} stroke="#FFFFFF"></GitHub>
+				<Twitter
+					size={20}
+					strokeWidth={1.25}
+					stroke="#FFFFFF"
+				></Twitter>
+				<Dribbble
+					size={20}
+					strokeWidth={1.25}
+					stroke="#FFFFFF"
+				></Dribbble>
 			</div>
 			<div className={styles.right}>
 				<div>About</div>

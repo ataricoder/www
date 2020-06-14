@@ -1,9 +1,23 @@
 .content {
-	margin: 0 50px;
+	padding: 10px 64px;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	/* Font color, will change */
 	color: white;
+}
+
+.left {
+	display: grid;
+	grid-template-columns: 200px 20px 20px 20px;
+	justify-items: center;
+	align-items: center;
+}
+
+.right {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-items: center;
+	align-items: center;
 }
 .separator {
 	border-top: 1px solid white;
