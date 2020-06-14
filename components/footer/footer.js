@@ -4,6 +4,7 @@ import Head from "next/head";
 import Button from "react-bootstrap/Button";
 import { GitHub, Twitter, Dribbble } from "react-feather";
 import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const Footer = () => (
 	<div>
@@ -18,7 +19,9 @@ const Footer = () => (
 		<div className={styles.separator}></div>
 		<div className={styles.content}>
 			<div className={styles.left}>
-				<div>2020 @ataricoder</div>
+				<Navbar.Brand href="/" className={styles.brand}>
+					👾 <div className={styles.brand_label}>ataricoder 2020</div>
+				</Navbar.Brand>
 				<a href="https://www.github.com/ataricoder" title="GitHub">
 					<GitHub
 						size={20}
