@@ -3,7 +3,7 @@
 } */
 
 .navbar {
-	background-color: #1f1f1f90;
+	background-color: #00000090;
 	height: 47px;
 	backdrop-filter: saturate(180%) blur(20px);
 	padding: 0px 64px !important;
