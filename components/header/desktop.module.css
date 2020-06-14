@@ -7,6 +7,8 @@
 	height: 47px;
 	backdrop-filter: saturate(180%) blur(20px);
 	padding: 0px 64px !important;
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
 .link {

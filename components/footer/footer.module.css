@@ -8,17 +8,33 @@
 
 .left {
 	display: grid;
-	grid-template-columns: 200px 20px 20px 20px;
-	justify-items: center;
+	grid-template-columns: 150px 20px 20px 20px;
+	justify-items: left;
 	align-items: center;
 }
 
 .right {
 	display: grid;
-	grid-template-columns: auto auto auto;
-	justify-items: center;
+	grid-template-columns: repeat(6, auto);
+	justify-items: left;
 	align-items: center;
 }
 .separator {
 	border-top: 1px solid white;
+}
+
+.link_group {
+	display: grid;
+	grid-template-columns: repeat(6, 100px);
+	align-items: center;
+}
+
+.link {
+	font-size: 14px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0px 4px;
+	color: #ffffff !important;
+	font-weight: 600;
 }
