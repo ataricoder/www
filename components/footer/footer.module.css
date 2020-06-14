@@ -1,3 +1,10 @@
-.cardWrapper {
+.content {
 	margin: 0 50px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	/* Font color, will change */
+	color: white;
+}
+.separator {
+	border-top: 1px solid white;
 }

@@ -2,7 +2,6 @@ import Link from "next/link";
 import styles from "./footer.module.css";
 import Head from "next/head";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 
 const Footer = () => (
 	<div>
@@ -14,8 +13,19 @@ const Footer = () => (
 				crossOrigin="anonymous"
 			></link>
 		</Head>
-		<div className={styles.cardWrapper}>
-			I really need to get styling this
+		<div className={styles.separator}></div>
+		<div className={styles.content}>
+			<div className={styles.left}>
+				<div>Copyright and Year</div>
+				<div>Github</div>
+				<div>Twitter</div>
+				<div>Dribble</div>
+			</div>
+			<div className={styles.right}>
+				<div>About</div>
+				<div>Projects</div>
+				<div>Blog</div>
+			</div>
 		</div>
 	</div>
 );
