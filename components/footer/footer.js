@@ -19,28 +19,37 @@ const Footer = () => (
 		<div className={styles.separator}></div>
 		<div className={styles.content}>
 			<div className={styles.left}>
-				<Navbar.Brand href="/" className={styles.brand}>
-					👾 <div className={styles.brand_label}>ataricoder 2020</div>
-				</Navbar.Brand>
+				<div className={styles.left_content}>
+					Designed and engineered by Daniel Munoz. Last update June
+					2020.
+				</div>
+			</div>
+			<div className={styles.right}>
 				<a href="https://www.github.com/ataricoder" title="GitHub">
 					<GitHub
+						className={styles.social}
 						size={20}
 						strokeWidth={1.25}
 						stroke="#FFFFFF"
 					></GitHub>
 				</a>
-				<Twitter
-					size={20}
-					strokeWidth={1.25}
-					stroke="#FFFFFF"
-				></Twitter>
-				<Dribbble
-					size={20}
-					strokeWidth={1.25}
-					stroke="#FFFFFF"
-				></Dribbble>
+				<a href="https://www.github.com/ataricoder" title="GitHub">
+					<Twitter
+						className={styles.social}
+						size={20}
+						strokeWidth={1.25}
+						stroke="#FFFFFF"
+					></Twitter>
+				</a>
+				<a href="https://www.github.com/ataricoder" title="GitHub">
+					<Dribbble
+						className={styles.social}
+						size={20}
+						strokeWidth={1.25}
+						stroke="#FFFFFF"
+					></Dribbble>
+				</a>
 			</div>
-			<div className={styles.right}></div>
 		</div>
 	</div>
 );

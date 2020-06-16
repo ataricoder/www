@@ -6,7 +6,7 @@
 	background-color: #00000090;
 	height: 47px;
 	backdrop-filter: saturate(180%) blur(20px);
-	padding: 0px 64px !important;
+	padding: 10px 64px !important;
 }
 
 .link {
