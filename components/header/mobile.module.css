@@ -13,7 +13,7 @@
 	background-color: #00000090;
 	backdrop-filter: saturate(180%) blur(20px);
 	position: absolute;
-	top: 47px;
+	/* top: 47px; */
 	right: 0;
 	left: 0;
 	padding: 9px 18px;
