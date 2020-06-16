@@ -1,10 +1,12 @@
 .scrolled {
-	/* box-shadow: 0 0 0 1px #ffffff20 !important; */
+	box-shadow: 0 2px 1px -1px #ffffff20 !important;
 	position: fixed !important;
 	top: 0px !important;
 	right: 0;
 	left: 0;
 	z-index: 1030;
+	margin: 0px 64px;
+	padding: 10px 0px !important;
 }
 
 .navbar {
@@ -12,10 +14,10 @@
 	top: 47px;
 	right: 0;
 	left: 0;
-	background-color: #00000090;
+	background-color: #00000050;
 	height: 47px;
 	backdrop-filter: saturate(180%) blur(20px);
-	padding: 10px 64px !important;
+	padding: 10px 64px;
 }
 
 .link {

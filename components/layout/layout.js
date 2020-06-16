@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import Footer from "@components/footer/footer";
 import Header from "@components/header/header";
-import Banner from "@components/banner/banner";
+import Spacer from "@components/spacer/spacer";
 const Layout = (props) => (
 	<div className={styles.layout}>
 		<Head>
@@ -15,11 +15,11 @@ const Layout = (props) => (
 				crossOrigin="anonymous"
 			></link>
 		</Head>
-		<Banner />
+		<Spacer />
 		<Header />
 		<div className={styles.content}>{props.children}</div>
 		<Footer />
-		<Banner />
+		<Spacer />
 	</div>
 );
 
