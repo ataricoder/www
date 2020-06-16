@@ -9,3 +9,15 @@ body {
 	-webkit-font-smoothing: antialiased;
 	background-color: #000000;
 }
+/* This styles mainly apply to the pages */
+h1 {
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #ffffff;
+}
