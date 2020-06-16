@@ -10,8 +10,13 @@
 }
 
 .navbar {
-	position: absolute;
+	/* With spacer */
 	/* top: 47px; */
+	/* position: relative; */
+	/* Without spacer */
+	top: 0px;
+	position: fixed;
+	/*  */
 	right: 0;
 	left: 0;
 	background-color: #00000090;
