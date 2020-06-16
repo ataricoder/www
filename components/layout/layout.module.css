@@ -2,6 +2,7 @@
 	/* padding: 128px 64px; */
 	max-width: 640px;
 	margin: 128px auto;
+	height: calc(100vh - 256px) !important;
 }
 
 @media (max-width: 991px) {
