@@ -1,10 +1,22 @@
 .scrolled {
 	/* box-shadow: 0 2px 1px -1px #ffffff20 !important; */
+	position: fixed !important;
+	top: 0px !important;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	margin: 0px 18px;
+	padding: 9px 0px !important;
 }
 
 .navbar {
 	background-color: #00000090;
 	backdrop-filter: saturate(180%) blur(20px);
+	position: absolute;
+	top: 47px;
+	right: 0;
+	left: 0;
+	padding: 9px 18px;
 }
 
 .link {
