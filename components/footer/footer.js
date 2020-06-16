@@ -40,50 +40,7 @@ const Footer = () => (
 					stroke="#FFFFFF"
 				></Dribbble>
 			</div>
-			<div className={styles.right}>
-				<Nav className="ml-auto">
-					<div className={styles.link_group}>
-						<Nav.Link href="/" className={styles.link} title="Home">
-							Home
-						</Nav.Link>
-						<Nav.Link
-							href="/about"
-							className={styles.link}
-							title="About"
-						>
-							About
-						</Nav.Link>
-						<Nav.Link
-							href="/blog"
-							className={styles.link}
-							title="Blog"
-						>
-							Blog
-						</Nav.Link>
-						<Nav.Link
-							href="/music"
-							className={styles.link}
-							title="Music"
-						>
-							Music
-						</Nav.Link>
-						<Nav.Link
-							href="/projects"
-							className={styles.link}
-							title="Projects"
-						>
-							Projects
-						</Nav.Link>
-						<Nav.Link
-							href="/bookmarks"
-							className={styles.link}
-							title="Bookmarks"
-						>
-							Bookmarks
-						</Nav.Link>
-					</div>
-				</Nav>
-			</div>
+			<div className={styles.right}></div>
 		</div>
 	</div>
 );

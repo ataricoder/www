@@ -111,73 +111,65 @@ const Header = () => {
 						className={desktop.navbar + " " + desktop_scrolled}
 						// Use bsPrefix for custom class
 					>
-						<div>
-							<Navbar.Brand href="/">👾</Navbar.Brand>
-						</div>
-						<div>
-							<Nav className="ml-auto">
-								<div className={desktop.link_group}>
-									<Nav.Link
-										href="/"
-										className={
-											desktop.link + " " + home_desktop
-										}
-										title="Home"
-									>
-										Home
-									</Nav.Link>
-									<Nav.Link
-										href="/about"
-										className={
-											desktop.link + " " + about_desktop
-										}
-										title="About"
-									>
-										About
-									</Nav.Link>
-									<Nav.Link
-										href="/blog"
-										className={
-											desktop.link + " " + blog_desktop
-										}
-										title="Blog"
-									>
-										Blog
-									</Nav.Link>
-									<Nav.Link
-										href="/music"
-										className={
-											desktop.link + " " + music_desktop
-										}
-										title="Music"
-									>
-										Music
-									</Nav.Link>
-									<Nav.Link
-										href="/projects"
-										className={
-											desktop.link +
-											" " +
-											projects_desktop
-										}
-										title="Projects"
-									>
-										Projects
-									</Nav.Link>
-									<Nav.Link
-										href="/bookmarks"
-										className={
-											desktop.link +
-											" " +
-											bookmarks_desktop
-										}
-										title="Bookmarks"
-									>
-										Bookmarks
-									</Nav.Link>
-								</div>
-							</Nav>
-						</div>
+						<Navbar.Brand href="/">👾</Navbar.Brand>
+						<Nav className="ml-auto">
+							<div className={desktop.link_group}>
+								<Nav.Link
+									href="/"
+									className={
+										desktop.link + " " + home_desktop
+									}
+									title="Home"
+								>
+									Home
+								</Nav.Link>
+								<Nav.Link
+									href="/about"
+									className={
+										desktop.link + " " + about_desktop
+									}
+									title="About"
+								>
+									About
+								</Nav.Link>
+								<Nav.Link
+									href="/blog"
+									className={
+										desktop.link + " " + blog_desktop
+									}
+									title="Blog"
+								>
+									Blog
+								</Nav.Link>
+								<Nav.Link
+									href="/music"
+									className={
+										desktop.link + " " + music_desktop
+									}
+									title="Music"
+								>
+									Music
+								</Nav.Link>
+								<Nav.Link
+									href="/projects"
+									className={
+										desktop.link + " " + projects_desktop
+									}
+									title="Projects"
+								>
+									Projects
+								</Nav.Link>
+								<Nav.Link
+									href="/bookmarks"
+									className={
+										desktop.link + " " + bookmarks_desktop
+									}
+									title="Bookmarks"
+								>
+									Bookmarks
+								</Nav.Link>
+							</div>
+						</Nav>
 					</Navbar>
 				</div>
 			</Desktop>
