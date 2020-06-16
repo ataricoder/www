@@ -16,7 +16,7 @@ const Footer = () => (
 				crossOrigin="anonymous"
 			></link>
 		</Head>
-		<div className={styles.separator}></div>
+		<hr className={styles.separator}></hr>
 		<div className={styles.content}>
 			<div className={styles.left}>
 				<div className={styles.left_content}>
@@ -30,7 +30,7 @@ const Footer = () => (
 						className={styles.social}
 						size={20}
 						strokeWidth={1.25}
-						stroke="#FFFFFF"
+						stroke="#444444"
 					></GitHub>
 				</a>
 				<a href="https://www.github.com/ataricoder" title="GitHub">
@@ -38,7 +38,7 @@ const Footer = () => (
 						className={styles.social}
 						size={20}
 						strokeWidth={1.25}
-						stroke="#FFFFFF"
+						stroke="#444444"
 					></Twitter>
 				</a>
 				<a href="https://www.github.com/ataricoder" title="GitHub">
@@ -46,7 +46,7 @@ const Footer = () => (
 						className={styles.social}
 						size={20}
 						strokeWidth={1.25}
-						stroke="#FFFFFF"
+						stroke="#444444"
 					></Dribbble>
 				</a>
 			</div>
