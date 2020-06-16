@@ -44,7 +44,7 @@ const Header = () => {
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
 			const scrollTop = window.pageYOffset;
-			if (scrollTop > 50) {
+			if (scrollTop > 47) {
 				setScrolled(true);
 			} else {
 				setScrolled(false);
@@ -107,7 +107,6 @@ const Header = () => {
 						collapseOnSelect
 						expand="lg"
 						variant="dark"
-						fixed="top"
 						className={desktop.navbar + " " + desktop_scrolled}
 						// Use bsPrefix for custom class
 					>

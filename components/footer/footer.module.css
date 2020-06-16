@@ -1,7 +1,6 @@
 .content {
 	height: 47px;
 	padding: 10px 64px;
-	margin-bottom: 36px;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	/* Font color, will change */
