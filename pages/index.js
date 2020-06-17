@@ -3,22 +3,18 @@ import Layout from "@components/layout/layout";
 export default function Blog() {
 	return (
 		<Layout>
-			<h1>Daniel Munoz</h1>
+			<h1>Hey, I'm Daniel Munoz 👋</h1>
 			<br></br>
 			<p>
-				Daniel is a designer and engineer. Currently studying Computer
-				Science and Health & Society at The University of Texas at
-				Austin, as well as working as a software engineer at Clean 'Em.
+				I'm a software engineer and designer. Just graduated from The
+				University of Texas at Austin where I learned about Computer
+				Science and Health & Society. Right now I'm looking for
+				opportunities.
 			</p>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-				bibendum, ligula vel imperdiet auctor, velit nisi consectetur
-				magna, nec feugiat augue nisl et est. Etiam feugiat nisi
-				dignissim mi gravida, non faucibus odio volutpat. Suspendisse
-				porta erat a felis feugiat finibus. Suspendisse varius dolor vel
-				tellus fringilla vehicula. Nunc viverra turpis et leo tempor
-				bibendum. In hac habitasse platea dictumst. Duis sit amet libero
-				odio.
+				Started programming in college while doing my pre-medical
+				studies, fell in love with software development and design. I
+				live by Mies Van der Rohe's ideals: form follows function.
 			</p>
 			<p>
 				Ut ut ex fermentum, hendrerit dui in, pretium arcu. Fusce arcu
