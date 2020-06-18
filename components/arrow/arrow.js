@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./arrow.module.css";
 import Head from "next/head";
+import { ArrowRight } from "react-feather";
 
 const Arrow = (props) => (
 	<div>
@@ -15,6 +16,11 @@ const Arrow = (props) => (
 		<div>
 			<a className={styles.button} href={props.href}>
 				{props.children}
+				<ArrowRight
+					className={styles.arrow}
+					size={16}
+					strokeWidth={2.5}
+				/>
 			</a>
 		</div>
 	</div>

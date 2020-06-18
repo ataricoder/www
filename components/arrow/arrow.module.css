@@ -1,3 +1,24 @@
 .button {
+	color: #68fdfe;
+	font-size: 16px;
+	font-weight: 600;
+	width: max-content;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-items: left;
+	align-items: center;
+	margin-bottom: 18px;
+}
+
+.button:hover {
+	text-decoration: none;
 	color: red;
+}
+
+.button:hover .arrow {
+	stroke: red !important;
+}
+
+.arrow {
+	stroke: #68fdfe;
 }

@@ -1,5 +1,4 @@
 import Layout from "@components/layout/layout";
-import Button from "react-bootstrap/Button";
 import Arrow from "@components/arrow/arrow";
 
 export default function Blog() {
@@ -13,8 +12,7 @@ export default function Blog() {
 				Science and Health & Society. Right now I'm looking for
 				opportunities.
 			</p>
-			<Arrow href={"/about"}>Test</Arrow>
-			<p>Learn more about me.</p>
+			<Arrow href={"/about"}>More about me</Arrow>
 			<p>
 				Ut ut ex fermentum, hendrerit dui in, pretium arcu. Fusce arcu
 				quam, tristique eget nulla in, lacinia interdum libero. Quisque
