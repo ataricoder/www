@@ -39,7 +39,7 @@
 @media (max-width: 991px) {
 	.content {
 		height: auto;
-		padding: 9px 18px 18px 18px;
+		padding: 9px 18px;
 	}
 	.separator {
 		display: none;
