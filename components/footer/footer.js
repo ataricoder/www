@@ -16,7 +16,7 @@ const Footer = () => (
 				crossOrigin="anonymous"
 			></link>
 		</Head>
-		<hr className={styles.separator}></hr>
+		<div className={styles.separator}></div>
 		<div className={styles.content}>
 			<div className={styles.left}>
 				<div className={styles.left_content}>
