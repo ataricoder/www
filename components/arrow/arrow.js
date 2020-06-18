@@ -19,7 +19,7 @@ const Arrow = (props) => (
 				<ArrowRight
 					className={styles.arrow}
 					size={16}
-					strokeWidth={2.5}
+					strokeWidth={4}
 				/>
 			</a>
 		</div>

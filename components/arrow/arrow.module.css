@@ -5,6 +5,7 @@
 	width: max-content;
 	display: grid;
 	grid-template-columns: auto auto;
+	column-gap: 4px;
 	justify-items: left;
 	align-items: center;
 	margin-bottom: 18px;
@@ -17,8 +18,13 @@
 
 .button:hover .arrow {
 	stroke: red !important;
+	transform: translateX(4px);
+	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	opacity: 1;
 }
 
 .arrow {
 	stroke: #68fdfe;
+	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	opacity: 0.4;
 }
