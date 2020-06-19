@@ -1,5 +1,5 @@
 .button {
-	color: #68fdfe;
+	color: #ffffff;
 	font-size: 16px;
 	font-weight: 600;
 	width: max-content;
@@ -13,18 +13,18 @@
 
 .button:hover {
 	text-decoration: none;
-	color: red;
+	color: #68fdfe;
 }
 
 .button:hover .arrow {
-	stroke: red !important;
+	stroke: #68fdfe !important;
 	transform: translateX(4px);
 	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 	opacity: 1;
 }
 
 .arrow {
-	stroke: #68fdfe;
+	stroke: #ffffff;
 	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 	opacity: 0.4;
 }
