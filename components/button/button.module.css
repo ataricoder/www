@@ -1,6 +1,6 @@
 .button {
-	background-color: #ffffff;
-	color: #000000;
+	background-color: #000000;
+	color: #ffffff;
 	border-color: #ffffff;
 	font-weight: 500;
 	font-size: 16px;
@@ -14,7 +14,7 @@
 
 .button:hover {
 	background-color: #000000;
-	border-color: #ffffff;
-	color: #ffffff;
+	border-color: #68fdfe;
+	color: #68fdfe;
 	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
