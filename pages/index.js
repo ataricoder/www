@@ -32,6 +32,7 @@ export default function Blog() {
 				Johnson, Jamee Johnson, Michael Dean...{" "}
 				<b>Black Lives Matter.</b>
 			</Featured>
+			<br></br>
 			<h1>Hey, I'm Daniel Munoz 👋</h1>
 			<br></br>
 			<p>
