@@ -10,11 +10,17 @@ export default function Blog() {
 			<p>
 				I'm a software engineer and designer. Just graduated from The
 				University of Texas at Austin where I learned about Computer
-				Science and Health & Society. Right now I'm looking for
-				opportunities.
+				Science and Health & Society, as well Design Strategies. Did my
+				pre-medical studies, but fell in love with computers. Right now
+				I'm looking for opportunities.
 			</p>
 			<Arrow href={"/about"}>More about me</Arrow>
 			<Button href={"/about"}>More about me</Button>
+			<h1>Blog</h1>
+			<p>
+				This is where I write down ideas, opinions and more. Usually
+				about computer science, mathematics, medicine and design.
+			</p>
 			<p>
 				Ut ut ex fermentum, hendrerit dui in, pretium arcu. Fusce arcu
 				quam, tristique eget nulla in, lacinia interdum libero. Quisque
