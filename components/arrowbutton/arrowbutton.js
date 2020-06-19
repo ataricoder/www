@@ -1,8 +1,8 @@
 import BootstrapButton from "react-bootstrap/Button";
-import styles from "./button.module.css";
+import styles from "./arrowbutton.module.css";
 import { ArrowRight } from "react-feather";
 
-const Button = (props) => (
+const ArrowButton = (props) => (
 	<div>
 		<BootstrapButton className={styles.button} size="sm" href={props.href}>
 			<div className={styles.content}>
@@ -17,4 +17,4 @@ const Button = (props) => (
 	</div>
 );
 
-export default Button;
+export default ArrowButton;
