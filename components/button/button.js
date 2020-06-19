@@ -1,6 +1,11 @@
+import BootstrapButton from "react-bootstrap/Button";
+import styles from "./button.module.css";
+
 const Button = (props) => (
 	<div>
-		<h1>Hello Button</h1>
+		<BootstrapButton className={styles.button}>
+			{props.children}
+		</BootstrapButton>
 	</div>
 );
 
