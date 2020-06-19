@@ -1,6 +1,7 @@
 import Layout from "@components/layout/layout";
 import Arrow from "@components/arrow/arrow";
 import ArrowButton from "@components/arrowbutton/arrowbutton";
+import Button from "@components/button/button";
 
 export default function Blog() {
 	return (
@@ -16,6 +17,7 @@ export default function Blog() {
 			</p>
 			<Arrow href={"/about"}>More about me</Arrow>
 			<ArrowButton href={"/about"}>More about me</ArrowButton>
+			<Button href={"/about"}>More about me</Button>
 			<h1>Blog</h1>
 			<p>
 				This is where I write down ideas, opinions and more. Usually

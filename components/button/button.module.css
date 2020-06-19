@@ -1,0 +1,20 @@
+.button {
+	background-color: #ffffff;
+	color: #000000;
+	border-color: #ffffff;
+	font-weight: 500;
+	font-size: 16px;
+	min-width: 200px;
+	width: max-content;
+	margin-bottom: 18px;
+	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	display: grid;
+	justify-items: center;
+}
+
+.button:hover {
+	background-color: #000000;
+	border-color: #ffffff;
+	color: #ffffff;
+	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
