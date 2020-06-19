@@ -14,7 +14,7 @@ export default function Blog() {
 				opportunities.
 			</p>
 			<Arrow href={"/about"}>More about me</Arrow>
-			<Button>Test</Button>
+			<Button href={"/about"}>More about me</Button>
 			<p>
 				Ut ut ex fermentum, hendrerit dui in, pretium arcu. Fusce arcu
 				quam, tristique eget nulla in, lacinia interdum libero. Quisque
