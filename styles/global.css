@@ -32,6 +32,7 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 	color: #ffffff;
+	line-height: 1.4;
 }
 li {
 	font-size: 16px;
@@ -45,6 +46,11 @@ ul {
 hr {
 	box-shadow: 0 2px 1px -1px #ffffff20 !important;
 	height: 10px;
+}
+
+b {
+	color: #68fdfe;
+	font-weight: 600;
 }
 
 @media (max-width: 991px) {

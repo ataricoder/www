@@ -18,7 +18,7 @@ export default function Blog() {
 			</p>
 			<Button href={"/about"}>More about me</Button>
 			<br></br>
-			<h2>Experience</h2>
+			<h1>Experience</h1>
 			<Experience
 				href="#"
 				title="iOS Software Engineer at Clean 'Em"

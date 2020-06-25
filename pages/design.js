@@ -2,10 +2,13 @@ import Layout from "@components/layout/layout";
 import Button from "@components/button/button";
 import Arrow from "@components/arrow/arrow";
 import Code from "@components/code/code";
+import Experience from "@components/experience/experience";
 
 var button = '<Button href="#">Button</Button>';
 var arrow = '<Arrow href="#">Arrow</Arrow>';
 var code = "<Code>Hello World!</Code>";
+var experience =
+	'<Experience href="#" title="Experience Title" date="Date Text">Experience Text</Experience>';
 
 export default function Design() {
 	return (
@@ -24,8 +27,15 @@ export default function Design() {
 			<hr></hr>
 
 			<h1>Code</h1>
-			<Code>Code goes here</Code>
+			<Code>Hello World!</Code>
 			<Code>{code}</Code>
+			<hr></hr>
+
+			<h1>Experience</h1>
+			<Experience href="#" title="Experience Title" date="Date Text">
+				Experience Text
+			</Experience>
+			<Code>{experience}</Code>
 			<hr></hr>
 		</Layout>
 	);
