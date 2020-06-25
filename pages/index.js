@@ -75,10 +75,7 @@ export default function Blog() {
 			</li>
 			<li>Class Designer at Argodesign, August 2019 - December 2019</li>
 			<br></br>
-			<h2>Engineering</h2>
-			<h2>Design</h2>
-			<h2>Socials</h2>
-			<h2>Blog</h2>
+			<h1>Blog</h1>
 			<p>
 				This is where I write down ideas, opinions and more. Usually
 				about computer science, mathematics, medicine and design.
