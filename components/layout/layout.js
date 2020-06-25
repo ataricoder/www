@@ -15,7 +15,6 @@ const Layout = (props) => (
 				crossOrigin="anonymous"
 			></link>
 		</Head>
-		{/* <Spacer /> */}
 		<Header />
 		<div className={styles.content}>{props.children}</div>
 		<Footer />

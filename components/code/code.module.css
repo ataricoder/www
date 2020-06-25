@@ -1,7 +1,10 @@
 .content {
 	padding: 16px;
 	border-radius: 8px;
-	margin-bottom: 18px;
+	margin-bottom: 9px;
 	background-color: #222222;
 	color: white;
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+		"Courier New", monospace;
+	font-size: 14px;
 }

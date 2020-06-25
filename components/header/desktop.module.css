@@ -36,13 +36,13 @@
 }
 
 .link:hover {
-	background-color: #68fdfe20;
-	color: #68fdfe !important;
+	background-color: #222222;
+	color: #ffffff !important;
 }
 
 .link_active {
-	background-color: #68fdfe20;
-	color: #68fdfe !important;
+	background-color: #222222;
+	color: #ffffff !important;
 }
 
 .link_group {

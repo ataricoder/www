@@ -31,6 +31,11 @@ ul {
 	padding: 0;
 }
 
+hr {
+	box-shadow: 0 2px 1px -1px #ffffff20 !important;
+	height: 10px;
+}
+
 @media (max-width: 991px) {
 	h1 {
 		font-size: 20px;
