@@ -19,7 +19,7 @@ const Layout = (props) => (
 		<Header />
 		<div className={styles.content}>{props.children}</div>
 		<Footer />
-		{/* <Spacer /> */}
+		<Spacer />
 	</div>
 );
 

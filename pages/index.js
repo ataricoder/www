@@ -16,9 +16,9 @@ export default function Blog() {
 				pre-medical studies, but fell in love with computers. Right now
 				I'm looking for opportunities.
 			</p>
-			<Arrow href={"/about"}>More about me</Arrow>
+			{/* <Arrow href={"/about"}>More about me</Arrow> */}
 			{/* <ArrowButton href={"/about"}>More about me</ArrowButton> */}
-			{/* <Button href={"/about"}>More about me</Button> */}
+			<Button href={"/about"}>More about me</Button>
 			<h1>Blog</h1>
 			<p>
 				This is where I write down ideas, opinions and more. Usually
