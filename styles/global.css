@@ -22,7 +22,18 @@ h1 {
 	font-weight: 600;
 }
 
+h2 {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 600;
+}
+
 p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffffff;
+}
+li {
 	font-size: 16px;
 	font-weight: 400;
 	color: #ffffff;
@@ -41,7 +52,11 @@ hr {
 		font-size: 20px;
 	}
 
-	p {
+	h2 {
 		font-size: 16px;
+	}
+
+	p {
+		font-size: 14px;
 	}
 }
