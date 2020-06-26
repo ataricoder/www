@@ -15,7 +15,7 @@
 
 .date {
 	font-size: 14px;
-	color: #888888;
+	color: #888888 !important;
 }
 
 @media (max-width: 991px) {
