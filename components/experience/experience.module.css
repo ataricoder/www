@@ -1,7 +1,12 @@
+.content {
+	padding: 9px 0;
+}
+
 .title {
 	color: #68fdfe;
 	font-size: 18px;
 	font-weight: 600;
+	margin-bottom: 0;
 }
 
 .title:hover {
@@ -14,7 +19,7 @@
 }
 
 .date {
-	font-size: 14px;
+	font-size: 14px !important;
 	color: #888888 !important;
 }
 
