@@ -3,12 +3,13 @@ import Button from "@components/button/button";
 import Arrow from "@components/arrow/arrow";
 import Code from "@components/code/code";
 import Experience from "@components/experience/experience";
+import Position from "@components/experience/position/position";
 
 var button = '<Button href="#">Button</Button>';
 var arrow = '<Arrow href="#">Arrow</Arrow>';
 var code = "<Code>Hello World!</Code>";
 var experience =
-	'<Experience href="#" title="Experience Title" date="Date Text">Experience Text</Experience>';
+	'<Experience href="#" company="Company" date="Date Range">\n\t<Position title="Position Title">Position Description</Position>\n</Experience>';
 
 export default function Design() {
 	return (
@@ -32,8 +33,8 @@ export default function Design() {
 			<hr></hr>
 
 			<h1>Experience</h1>
-			<Experience href="#" title="Experience Title" date="Date Text">
-				Experience Text
+			<Experience href="#" company="Company" date="Date Range">
+				<Position title="Position Title">Position Description</Position>
 			</Experience>
 			<Code>{experience}</Code>
 			<hr></hr>

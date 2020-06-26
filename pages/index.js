@@ -3,6 +3,7 @@ import Arrow from "@components/arrow/arrow";
 import Button from "@components/button/button";
 import Featured from "@components/featured/featured";
 import Experience from "@components/experience/experience";
+import Position from "@components/experience/position/position";
 
 export default function Blog() {
 	return (
@@ -21,12 +22,39 @@ export default function Blog() {
 			<h1>Experience</h1>
 			<Experience
 				href="#"
-				title="iOS Software Engineer at Clean 'Em"
+				company="Clean 'Em"
 				date="June 2020 - August 2020"
 			>
-				Created the API needed on the back-end to interact with the iOS
-				application and utilized Cocoapods (Alamofire) to use the API.
-				Used JSON web tokens for authentication and session control.
+				<Position title="iOS Software Engineer">
+					Created the API needed on the back-end to interact with the
+					iOS application and utilized Cocoapods (Alamofire) to use
+					the API. Used JSON web tokens for authentication and session
+					control.
+				</Position>
+				<Position title="Front-end Software Engineer">
+					Created the API needed on the back-end to interact with the
+					iOS application and utilized Cocoapods (Alamofire) to use
+					the API. Used JSON web tokens for authentication and session
+					control.
+				</Position>
+			</Experience>
+			<Experience
+				href="#"
+				company="Clean 'Em"
+				date="June 2020 - August 2020"
+			>
+				<Position title="iOS Software Engineer">
+					Created the API needed on the back-end to interact with the
+					iOS application and utilized Cocoapods (Alamofire) to use
+					the API. Used JSON web tokens for authentication and session
+					control.
+				</Position>
+				<Position title="Front-end Software Engineer">
+					Created the API needed on the back-end to interact with the
+					iOS application and utilized Cocoapods (Alamofire) to use
+					the API. Used JSON web tokens for authentication and session
+					control.
+				</Position>
 			</Experience>
 			<li>
 				iOS Software Engineer Intern at Clean 'Em, June 2020 - August
