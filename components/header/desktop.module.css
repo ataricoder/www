@@ -33,9 +33,11 @@
 	margin: 0px 4px;
 	color: #ffffff !important;
 	font-weight: 600;
+	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
 .link:hover {
+	transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 	background-color: #68fdfe20;
 	color: #68fdfe !important;
 }
