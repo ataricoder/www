@@ -9,7 +9,6 @@ export default function Blog() {
 	return (
 		<Layout>
 			<h1>Hey, I'm Daniel Munoz 👋</h1>
-			<br></br>
 			<p>
 				I'm a software engineer and designer. Just graduated from The
 				University of Texas at Austin where I learned about Computer
