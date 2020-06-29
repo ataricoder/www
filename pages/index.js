@@ -50,28 +50,37 @@ export default function Blog() {
 				company="The University of Texas at Austin, Extended Campus"
 				date="October 2017 - May 2018"
 			>
-				<Position title="Web Development Coding Bootcamp"></Position>
+				<Position title="Web Development Coding Bootcamp">
+					Concepts Learned: MySQL, React, Express, Node
+				</Position>
 			</Experience>
 			<Experience
 				href="#"
 				company="General Assembly"
 				date="May 2018 - August 2018"
 			>
-				<Position title="User Experience"></Position>
+				<Position title="User Experience">
+					Concepts Learned: User Flows, MSCW
+				</Position>
 			</Experience>
 			<Experience
 				href="#"
 				company="Codepath"
 				date="January 2019 - May 2019"
 			>
-				<Position title="iOS Development"></Position>
+				<Position title="iOS Development">
+					Concepts Learned: Cocoapods
+				</Position>
 			</Experience>
 			<Experience
 				href="#"
 				company="Codepath"
 				date="June 2020 - August 2020"
 			>
-				<Position title="Advanced Software Engineering"></Position>
+				<Position title="Advanced Software Engineering">
+					Refresher course on data structures concepts, accompanied
+					with practice on software engineering interview questions.
+				</Position>
 			</Experience>
 			<hr></hr>
 			<h1>Experience</h1>
@@ -139,21 +148,6 @@ export default function Blog() {
 			<p>
 				This is where I write down ideas, opinions and more. Usually
 				about computer science, mathematics, medicine and design.
-			</p>
-			<p>
-				Ut ut ex fermentum, hendrerit dui in, pretium arcu. Fusce arcu
-				quam, tristique eget nulla in, lacinia interdum libero. Quisque
-				augue libero, feugiat finibus lorem sit amet, fringilla faucibus
-				dolor. Fusce quis imperdiet massa. Phasellus massa justo, varius
-				in eros a, laoreet posuere ipsum. Etiam nec metus quis velit
-				lobortis porttitor. Nam rhoncus egestas sem vitae tempus. Etiam
-				efficitur scelerisque augue, vitae rhoncus ipsum commodo
-				consectetur. Nullam laoreet turpis et est hendrerit hendrerit.
-				Integer viverra tellus sit amet felis faucibus pulvinar. Integer
-				fringilla dapibus turpis, id pellentesque sapien aliquam non.
-				Cras at cursus lorem, et sodales ante. Nam varius magna eget
-				ipsum ullamcorper, ac finibus nulla fermentum. Aliquam eget
-				vehicula lorem, nec auctor dui.
 			</p>
 			<ul>
 				<a href="/about">
