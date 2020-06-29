@@ -4,6 +4,14 @@ import Button from "@components/button/button";
 import Featured from "@components/featured/featured";
 import Experience from "@components/experience/experience";
 import Position from "@components/experience/position/position";
+import styled from "styled-components";
+
+const Buttons = styled.div`
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	width: max-content;
+	column-gap: 10px;
+`;
 
 export default function Blog() {
 	return (
@@ -16,7 +24,10 @@ export default function Blog() {
 				pre-medical studies, but fell in love with computers.{" "}
 				<b>Right now I'm looking for opportunities.</b>
 			</p>
-			<Button href={"/about"}>More about me</Button>
+			<Buttons>
+				<Button href={"/about"}>More about me</Button>
+				<Button href={"/about"}>Email me</Button>
+			</Buttons>
 			<hr></hr>
 			<h1>Education</h1>
 			<Experience
