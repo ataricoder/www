@@ -12,7 +12,7 @@ var code = "<Code>Hello World!</Code>";
 var experience =
 	'<Experience href="#" company="Company" date="Date Range">\n\t<Position title="Position Title">Position Description</Position>\n</Experience>';
 var color =
-	'<Color title="Tron Cyan" color="#68fdfe" font_color="#000000">\n\t#68fdfe\n</Color>';
+	'<Color\ntitle="Tron Cyan"\ncolor="#68fdfe"\nfont_color="#000000"\noutline="#000000">\n\t#68fdfe\n</Color>';
 
 export default function Design() {
 	return (
@@ -43,18 +43,49 @@ export default function Design() {
 			<hr></hr>
 
 			<h1>Color Block</h1>
-			<Color title="Tron Cyan" color="#68fdfe" font_color="#000000">
+			<Color
+				title="Tron Cyan"
+				color="#68fdfe"
+				font_color="#000000"
+				outline="#000000"
+			>
 				#68fdfe
 			</Color>
 			<Code>{color}</Code>
 			<hr></hr>
 
 			<h1>Colors</h1>
-			<Color title="Tron Cyan" color="#68fdfe" font_color="#000000">
+			<Color
+				title="Tron Cyan"
+				color="#68fdfe"
+				font_color="#000000"
+				outline="#000000"
+			>
 				#68fdfe
 			</Color>
-			<Color title="Matte Black" color="#222222" font_color="#ffffff">
+			<Color
+				title="Matte Black"
+				color="#222222"
+				font_color="#ffffff"
+				outline="#000000"
+			>
 				#222222
+			</Color>
+			<Color
+				title="Pure Black"
+				color="#000000"
+				font_color="#ffffff"
+				outline="#ffffff"
+			>
+				#000000
+			</Color>
+			<Color
+				title="Pure White"
+				color="#ffffff"
+				font_color="#000000"
+				outline="#000000"
+			>
+				#ffffff
 			</Color>
 		</Layout>
 	);

@@ -12,7 +12,7 @@ const Buttons = styled.div`
 	width: max-content;
 	column-gap: 10px;
 	@media (max-width: 991px) {
-		grid-template-columns: none;
+		grid-template-columns: none !important;
 		grid-template-rows: repeat(2, auto);
 	}
 `;
@@ -30,7 +30,7 @@ export default function Blog() {
 			</p>
 			<Buttons>
 				<Button href={"/about"}>More about me</Button>
-				<Button href={"/about"}>Email me</Button>
+				<Button href={"mailto:ataricoder@gmail.com"}>Email me</Button>
 			</Buttons>
 			<hr></hr>
 			<h1>Education</h1>

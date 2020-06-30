@@ -6,7 +6,12 @@ export default function Bookmarks() {
 			<h1>Bookmarks Page</h1>
 			<h2>Tools</h2>
 			<li>https://title.sh/</li>
+			<hr></hr>
 			<h2>Inspiration</h2>
+			<li>https://ibuildmyideas.com/</li>
+			<li>https://brianlovin.com/</li>
+			<li>https://paco.im/</li>
+			<li>https://shud.in/</li>
 		</Layout>
 	);
 }
