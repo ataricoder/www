@@ -21,11 +21,11 @@ export async function getStaticProps() {
 const Buttons = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	grid-template-rows: none !important;
+	grid-template-rows: none;
 	width: max-content;
 	column-gap: 10px;
 	@media (max-width: 991px) {
-		grid-template-columns: none !important;
+		grid-template-columns: none;
 		grid-template-rows: repeat(2, auto);
 	}
 `;
