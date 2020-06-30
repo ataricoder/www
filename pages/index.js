@@ -5,6 +5,16 @@ import Featured from "@components/featured/featured";
 import Experience from "@components/experience/experience";
 import Position from "@components/experience/position/position";
 import styled from "styled-components";
+import { getSortedPostsData } from "../lib/posts";
+
+export async function getStaticProps() {
+	const allPostsData = getSortedPostsData();
+	return {
+		props: {
+			allPostsData,
+		},
+	};
+}
 
 const Buttons = styled.div`
 	display: grid;
@@ -17,7 +27,7 @@ const Buttons = styled.div`
 	}
 `;
 
-export default function Blog() {
+export default function Blog({ allPostsData }) {
 	return (
 		<Layout>
 			<h1>Hey, I'm Daniel Munoz 👋</h1>
@@ -169,6 +179,21 @@ export default function Blog() {
 					nisi.
 				</a>
 			</ul>
+			<section>…</section>
+			<section>
+				<h2>Blog</h2>
+				<ul>
+					{allPostsData.map(({ id, date, title }) => (
+						<li key={id}>
+							{title}
+							<br />
+							{id}
+							<br />
+							{date}
+						</li>
+					))}
+				</ul>
+			</section>
 		</Layout>
 	);
 }
