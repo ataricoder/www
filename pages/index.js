@@ -185,14 +185,18 @@ export default function Index({ allPostsData }) {
 			<section>
 				<h2>Blog</h2>
 				<ul>
-					{allPostsData.map(({ id, date, title }) => (
+					{allPostsData.map(({ id, date, title, updated }) => (
 						<li key={id}>
 							<Link href="/blog/[id]" as={`/blog/${id}`}>
 								<a>{title}</a>
 							</Link>
-							<br />
+							<br></br>
 							<small>
 								<Date dateString={date} />
+							</small>
+							<br></br>
+							<small>
+								<Date dateString={updated} />
 							</small>
 						</li>
 					))}

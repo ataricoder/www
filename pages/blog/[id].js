@@ -32,6 +32,8 @@ export default function Blog({ postData }) {
 			<br />
 			<Date dateString={postData.date} />
 			<br />
+			<Date dateString={postData.updated} />
+			<br />
 			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 		</Layout>
 	);
