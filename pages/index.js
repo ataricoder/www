@@ -6,6 +6,8 @@ import Experience from "@components/experience/experience";
 import Position from "@components/experience/position/position";
 import styled from "styled-components";
 import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
+import Date from "@components/date/date";
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -19,6 +21,7 @@ export async function getStaticProps() {
 const Buttons = styled.div`
 	display: grid;
 	grid-template-columns: repeat(2, auto);
+	grid-template-rows: none !important;
 	width: max-content;
 	column-gap: 10px;
 	@media (max-width: 991px) {
@@ -185,11 +188,13 @@ export default function Blog({ allPostsData }) {
 				<ul>
 					{allPostsData.map(({ id, date, title }) => (
 						<li key={id}>
-							{title}
+							<Link href="/blog/[id]" as={`/blog/${id}`}>
+								<a>{title}</a>
+							</Link>
 							<br />
-							{id}
-							<br />
-							{date}
+							<small>
+								<Date dateString={date} />
+							</small>
 						</li>
 					))}
 				</ul>
