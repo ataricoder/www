@@ -182,7 +182,6 @@ export default function Blog({ allPostsData }) {
 					nisi.
 				</a>
 			</ul>
-			<section>…</section>
 			<section>
 				<h2>Blog</h2>
 				<ul>
