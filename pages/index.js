@@ -11,6 +11,10 @@ const Buttons = styled.div`
 	grid-template-columns: repeat(2, auto);
 	width: max-content;
 	column-gap: 10px;
+	@media (max-width: 991px) {
+		grid-template-columns: none;
+		grid-template-rows: repeat(2, auto);
+	}
 `;
 
 export default function Blog() {
