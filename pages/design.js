@@ -4,12 +4,15 @@ import Arrow from "@components/arrow/arrow";
 import Code from "@components/code/code";
 import Experience from "@components/experience/experience";
 import Position from "@components/experience/position/position";
+import Color from "@components/color/color";
 
 var button = '<Button href="#">Button</Button>';
 var arrow = '<Arrow href="#">Arrow</Arrow>';
 var code = "<Code>Hello World!</Code>";
 var experience =
 	'<Experience href="#" company="Company" date="Date Range">\n\t<Position title="Position Title">Position Description</Position>\n</Experience>';
+var color =
+	'<Color title="Tron Cyan" color="#68fdfe" font_color="#000000">\n\t#68fdfe\n</Color>';
 
 export default function Design() {
 	return (
@@ -38,6 +41,21 @@ export default function Design() {
 			</Experience>
 			<Code>{experience}</Code>
 			<hr></hr>
+
+			<h1>Color Block</h1>
+			<Color title="Tron Cyan" color="#68fdfe" font_color="#000000">
+				#68fdfe
+			</Color>
+			<Code>{color}</Code>
+			<hr></hr>
+
+			<h1>Colors</h1>
+			<Color title="Tron Cyan" color="#68fdfe" font_color="#000000">
+				#68fdfe
+			</Color>
+			<Color title="Matte Black" color="#222222" font_color="#ffffff">
+				#222222
+			</Color>
 		</Layout>
 	);
 }
