@@ -30,7 +30,7 @@ const Buttons = styled.div`
 	}
 `;
 
-export default function Blog({ allPostsData }) {
+export default function Index({ allPostsData }) {
 	return (
 		<Layout>
 			<h1>Hey, I'm Daniel Munoz 👋</h1>
