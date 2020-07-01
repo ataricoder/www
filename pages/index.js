@@ -162,7 +162,7 @@ export default function Index({ recentPosts }) {
 			>
 				<Position title="Emergency Room Junior Volunteer"></Position>
 			</Experience>
-			{/* <hr></hr>
+			<hr></hr>
 			<h1>Blog</h1>
 			<p>
 				This is where I write down ideas, opinions and more. Usually
@@ -185,7 +185,7 @@ export default function Index({ recentPosts }) {
 					</ul>
 				))}
 			</ul>
-			<Button href={"/blog"}>Read more</Button> */}
+			<Button href={"/blog"}>Read more</Button>
 		</Layout>
 	);
 }
