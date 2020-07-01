@@ -11,9 +11,10 @@ import Date from "@components/date/date";
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
+	const recentPosts = allPostsData.sort((a, b) => b - a).slice(0, 3);
 	return {
 		props: {
-			allPostsData,
+			recentPosts,
 		},
 	};
 }
@@ -30,7 +31,7 @@ const Buttons = styled.div`
 	}
 `;
 
-export default function Index({ allPostsData }) {
+export default function Index({ recentPosts }) {
 	return (
 		<Layout>
 			<h1>Hey, I'm Daniel Munoz 👋</h1>
@@ -168,7 +169,7 @@ export default function Index({ allPostsData }) {
 			</p>
 			<section>
 				<ul>
-					{allPostsData.map(({ id, date, title, updated }) => (
+					{recentPosts.map(({ id, date, title, updated }) => (
 						<li key={id}>
 							<Link href="/blog/[id]" as={`/blog/${id}`}>
 								<a>{title}</a>
