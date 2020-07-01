@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "@components/date/date";
+import Post from "@components/post/post";
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -167,40 +168,22 @@ export default function Index({ recentPosts }) {
 				This is where I write down ideas, opinions and more. Usually
 				about computer science, mathematics, medicine and design.
 			</p>
-			<section>
-				<ul>
-					{recentPosts.map(({ id, date, title, updated }) => (
-						<li key={id}>
-							<Link href="/blog/[id]" as={`/blog/${id}`}>
-								<a>{title}</a>
-							</Link>
-							<br></br>
-							<small>
-								<Date dateString={date} />
-							</small>
-							<br></br>
-							<small>
-								<Date dateString={updated} />
-							</small>
-						</li>
-					))}
-				</ul>
-			</section>
 			<ul>
-				<a href="/about">
-					Vestibulum volutpat elit eget rhoncus rhoncus.
-				</a>
-			</ul>
-			<ul>
-				<a href="/about">
-					Morbi hendrerit sapien eu lectus dictum scelerisque.
-				</a>
-			</ul>
-			<ul>
-				<a href="/about">
-					Quisque sed magna porta, lobortis est molestie, lobortis
-					nisi.
-				</a>
+				{recentPosts.map(({ id, date, title, updated, preview }) => (
+					<ul key={id}>
+						<Link href="/blog/[id]" as={`/blog/${id}`}>
+							<Post
+								href="/blog/[id]"
+								as={`/blog/${id}`}
+								title={title}
+								date={date}
+								updated={updated}
+							>
+								{preview}
+							</Post>
+						</Link>
+					</ul>
+				))}
 			</ul>
 		</Layout>
 	);

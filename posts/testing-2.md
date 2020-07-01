@@ -2,6 +2,7 @@
 title: "When to Use Static Generation v.s. Server-side Rendering"
 date: "2020-03-02"
 updated: "2020-06-30"
+preview: "In the spirit of over-complicating the hell out of my personal website, I spent time this weekend trying to solve one very small and seemingly-simple "
 ---
 
 > This post is a complement to episode 346 of Design Details, Quality Software. It is also informed by the 2018 WWDC talk, The Qualities of Great Design.

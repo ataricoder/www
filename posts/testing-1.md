@@ -2,6 +2,7 @@
 title: "When to Use Static Generation v.s. Server-side Rendering"
 date: "2020-02-02"
 updated: "2020-06-30"
+preview: "How adding just-for-me authentication cascaded into new ideas and possibilities for play."
 ---
 
 > This post is a complement to episode 346 of Design Details, Quality Software. It is also informed by the 2018 WWDC talk, The Qualities of Great Design.

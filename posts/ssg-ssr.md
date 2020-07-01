@@ -2,6 +2,7 @@
 title: "When to Use Static Generation v.s. Server-side Rendering"
 date: "2020-01-02"
 updated: "2020-06-30"
+preview: "Rebuilding my self-hosted blog with Next.js and Ghost as a headless CMS."
 ---
 
 > This post is a complement to episode 346 of Design Details, Quality Software. It is also informed by the 2018 WWDC talk, The Qualities of Great Design.
