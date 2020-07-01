@@ -57,11 +57,15 @@ code {
 	color: #ffffff !important;
 }
 blockquote {
-	background-color: #222222;
 	padding: 16px;
-	border-radius: 8px;
-	font-size: 14px;
+	border-left-width: 4px;
+	border-left-color: #68fdfe;
+	border-left-style: solid;
+	border-radius: 4px;
 	font-style: italic;
+}
+blockquote p {
+	margin-bottom: 0px;
 }
 
 hr {

@@ -4,7 +4,9 @@ date: "2020-01-02"
 updated: "2020-06-30"
 ---
 
-> Testing blockquote
+> This post is a complement to episode 346 of Design Details, Quality Software. It is also informed by the 2018 WWDC talk, The Qualities of Great Design.
+
+---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
