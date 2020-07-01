@@ -166,24 +166,7 @@ export default function Index({ allPostsData }) {
 				This is where I write down ideas, opinions and more. Usually
 				about computer science, mathematics, medicine and design.
 			</p>
-			<ul>
-				<a href="/about">
-					Vestibulum volutpat elit eget rhoncus rhoncus.
-				</a>
-			</ul>
-			<ul>
-				<a href="/about">
-					Morbi hendrerit sapien eu lectus dictum scelerisque.
-				</a>
-			</ul>
-			<ul>
-				<a href="/about">
-					Quisque sed magna porta, lobortis est molestie, lobortis
-					nisi.
-				</a>
-			</ul>
 			<section>
-				<h2>Blog</h2>
 				<ul>
 					{allPostsData.map(({ id, date, title, updated }) => (
 						<li key={id}>
@@ -202,6 +185,22 @@ export default function Index({ allPostsData }) {
 					))}
 				</ul>
 			</section>
+			<ul>
+				<a href="/about">
+					Vestibulum volutpat elit eget rhoncus rhoncus.
+				</a>
+			</ul>
+			<ul>
+				<a href="/about">
+					Morbi hendrerit sapien eu lectus dictum scelerisque.
+				</a>
+			</ul>
+			<ul>
+				<a href="/about">
+					Quisque sed magna porta, lobortis est molestie, lobortis
+					nisi.
+				</a>
+			</ul>
 		</Layout>
 	);
 }
