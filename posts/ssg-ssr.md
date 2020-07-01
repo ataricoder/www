@@ -4,6 +4,8 @@ date: "2020-01-02"
 updated: "2020-06-30"
 ---
 
+> Testing blockquote
+
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
 You can use Static Generation for many types of pages, including:
@@ -27,11 +29,19 @@ In that case, you can use **Server-Side Rendering**. It will be slower, but the 
 
 ---
 
+```python
+print("Hello World")
 ```
-This is a code block
+
+```css
+h1 {
+	color: red;
+}
 ```
 
 ---
 
 -   This is a unordered list
 -   This is another one
+
+---

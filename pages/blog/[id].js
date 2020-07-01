@@ -26,13 +26,13 @@ export default function Blog({ postData }) {
 			<Head>
 				<title>{postData.title}</title>
 			</Head>
-			{postData.title}
-			<br />
-			{postData.id}
-			<br />
-			<Date dateString={postData.date} />
-			<br />
-			<Date dateString={postData.updated} />
+			<h1>{postData.title}</h1>
+			<h2>
+				Date Created: <Date dateString={postData.date} />
+			</h2>
+			<h2>
+				Date Updated: <Date dateString={postData.updated} />
+			</h2>
 			<br />
 			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 		</Layout>

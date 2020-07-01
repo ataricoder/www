@@ -56,6 +56,13 @@ pre {
 code {
 	color: #ffffff !important;
 }
+blockquote {
+	background-color: #222222;
+	padding: 16px;
+	border-radius: 8px;
+	font-size: 14px;
+	font-style: italic;
+}
 
 hr {
 	box-shadow: 0 2px 1px -1px #ffffff20 !important;

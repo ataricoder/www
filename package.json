@@ -27,5 +27,6 @@
 		"build": "next build",
 		"start": "next start",
 		"server": "node lib/get-posts.js"
-	}
+	},
+	"devDependencies": {}
 }
