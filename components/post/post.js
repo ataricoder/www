@@ -9,7 +9,7 @@ const Post = (props) => (
 		</Link>
 		<p className={styled.preview}>{props.children}</p>
 		<div className={styled.date}>
-			<Date dateString={props.updated} />
+			<Date dateString={props.date} />
 		</div>
 	</div>
 );
