@@ -185,6 +185,7 @@ export default function Index({ recentPosts }) {
 					</ul>
 				))}
 			</ul>
+			<Button href={"/blog"}>Read more</Button>
 		</Layout>
 	);
 }

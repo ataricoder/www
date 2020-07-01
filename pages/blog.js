@@ -2,6 +2,7 @@ import Layout from "@components/layout/layout";
 import Link from "next/link";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "@components/date/date";
+import Post from "@components/post/post";
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -16,25 +17,23 @@ export default function Blog({ allPostsData }) {
 	return (
 		<Layout>
 			<h1>Blog</h1>
-			<section>
-				<ul>
-					{allPostsData.map(({ id, date, title, updated }) => (
-						<li key={id}>
-							<Link href="/blog/[id]" as={`/blog/${id}`}>
-								<a>{title}</a>
-							</Link>
-							<br></br>
-							<small>
-								Created: <Date dateString={date} />
-							</small>
-							<br></br>
-							<small>
-								Updated: <Date dateString={updated} />
-							</small>
-						</li>
-					))}
-				</ul>
-			</section>
+			<ul>
+				{allPostsData.map(({ id, date, title, updated, preview }) => (
+					<ul key={id}>
+						<Link href="/blog/[id]" as={`/blog/${id}`}>
+							<Post
+								href="/blog/[id]"
+								as={`/blog/${id}`}
+								title={title}
+								date={date}
+								updated={updated}
+							>
+								{preview}
+							</Post>
+						</Link>
+					</ul>
+				))}
+			</ul>
 		</Layout>
 	);
 }
