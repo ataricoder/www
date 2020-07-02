@@ -13,6 +13,7 @@ export default function Bookmarks() {
 			<li>https://brianlovin.com/</li>
 			<li>https://paco.im/</li>
 			<li>https://shud.in/</li>
+			<li>https://karrisaarinen.com/</li>
 		</Layout>
 	);
 }
