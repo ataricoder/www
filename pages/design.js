@@ -13,6 +13,8 @@ var experience =
 	'<Experience href="#" company="Company" date="Date Range">\n\t<Position title="Position Title">Position Description</Position>\n</Experience>';
 var color =
 	'<Color\ntitle="Tron Cyan"\ncolor="#68fdfe"\nfont_color="#000000"\noutline="#000000">\n\t#68fdfe\n</Color>';
+var typography =
+	'font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;';
 
 export default function Design() {
 	return (
@@ -87,6 +89,25 @@ export default function Design() {
 			>
 				#ffffff
 			</Color>
+			<hr></hr>
+			<h1>Typography</h1>
+			<h2>Font Family: Inter</h2>
+			<Code>{typography}</Code>
+			<hr></hr>
+			<h1>Font Style</h1>
+			<h2>H1 - Desktop</h2>
+			<ul>
+				<p>Font Color: #ffffff</p>
+				<p>Font Size: 22px</p>
+				<p>Font Weight: 600</p>
+			</ul>
+			<br></br>
+			<h2>H1 - Mobile</h2>
+			<ul>
+				<p>Font Color: #ffffff</p>
+				<p>Font Size: 20px</p>
+				<p>Font Weight: 600</p>
+			</ul>
 		</Layout>
 	);
 }

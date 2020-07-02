@@ -2,9 +2,9 @@ import Layout from "@components/layout/layout";
 import styled from "styled-components";
 
 const Playlist = styled.iframe`
-	border-radius: 8px;
-	border-color: #000000;
-	border-width: 0px;
+	border-radius: 8px !important;
+	border-color: #000000 !important;
+	border-width: 0px !important;
 `;
 
 export default function Music() {
