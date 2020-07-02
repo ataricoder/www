@@ -11,7 +11,7 @@ export default function About() {
 	return (
 		<Layout>
 			<h1>About Page</h1>
-			<Image width="640px" height="auto" src="/www_about.jpg"></Image>
+			<Image width="100%" height="auto" src="/www_about.jpg"></Image>
 			<hr></hr>
 			<h1>Education</h1>
 			<Experience
