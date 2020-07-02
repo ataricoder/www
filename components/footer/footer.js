@@ -20,7 +20,7 @@ const Footer = () => (
 		<div className={styles.content}>
 			<div className={styles.left}>
 				<div className={styles.left_content}>
-					Designed and engineered by Daniel Munoz. Last update June
+					Designed and engineered by Daniel Munoz. Last update July
 					2020.
 				</div>
 			</div>
