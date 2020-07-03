@@ -28,6 +28,11 @@ const Buttons = styled.div`
 	column-gap: 10px;
 `;
 
+const Call = styled.p`
+	color: #68fdfe !important;
+	font-weight: 600;
+`;
+
 export default function Index({ recentPosts }) {
 	return (
 		<Layout>
@@ -35,13 +40,15 @@ export default function Index({ recentPosts }) {
 			<p>
 				I'm a software engineer and designer. Just graduated from The
 				University of Texas at Austin where I learned about Computer
-				Science and Health & Society, as well Design Strategies. Did my
-				pre-medical studies, but fell in love with computers.{" "}
-				<b>Right now I'm looking for opportunities.</b>
+				Science and Public Health. Did my pre-medical studies, but fell
+				in love with computers.
 			</p>
+			<Call>
+				Right now I'm looking for software engineering opportunities.
+			</Call>
 			<Buttons>
 				<Button href={"/about"}>More about me</Button>
-				<Button href={"mailto:ataricoder@gmail.com"}>Email me</Button>
+				<Button href={"mailto:ataricoder@hey.com"}>Email me</Button>
 			</Buttons>
 			<hr></hr>
 			<h1>Blog</h1>
