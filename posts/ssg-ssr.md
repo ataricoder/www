@@ -5,7 +5,7 @@ updated: "2020-06-30"
 preview: "Rebuilding my self-hosted blog with Next.js and Ghost as a headless CMS."
 ---
 
-![Image of Yaktocat](/ghost_next_test.png)
+![Ghost Next Blog](/ghost_next_test.png)
 
 > This post is a complement to episode 346 of Design Details, Quality Software. It is also informed by the 2018 WWDC talk, The Qualities of Great Design.
 
