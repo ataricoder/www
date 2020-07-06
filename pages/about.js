@@ -11,8 +11,31 @@ export default function About() {
 	return (
 		<Layout>
 			<h1>Hey there! 👋</h1>
-			<p>Right now I'm looking for software engineering or design opportunities,</p>
-			<h1>About Page</h1>
+			<p>
+				I'm a recent graduate from The University of Texas at Austin,
+				currently living in Austin and looking for software engineering
+				opportunities.
+			</p>
+			<p>
+				During college, I worked as one of the first engineers at{" "}
+				<a href="https://clean-em.com">Clean 'Em</a> where I helped
+				design and build the first version of the web application. I
+				ended up helping design and build the second version, as well as
+				the first iOS application.
+			</p>
+			<p>
+				I also worked as an IT technician for the department of{" "}
+				<a href="https://utrecsports.org">Recreational Sports</a> in The
+				University of Texas at Austin, where I helped maintain and
+				create software and hardware.
+			</p>
+			<p>
+				Prior to Clean 'Em, I had software engineering internships at{" "}
+				<a href="https://gardenmaniaus.com">Gardenmania</a> where I
+				helped build solutions for better client management, as well as
+				did some freelance work to help put up new websites and improve
+				their SEO.
+			</p>
 			<Image width="100%" height="auto" src="/www_about.jpg"></Image>
 			<hr></hr>
 			<h1>Education</h1>
