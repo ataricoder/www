@@ -6,7 +6,35 @@ import Spacer from "@components/spacer/spacer";
 const Layout = (props) => (
 	<div className={styles.layout}>
 		<Head>
-			<title>ataricoder</title>
+			<title>Daniel Munoz</title>
+			{/* Primary Meta Tags */}
+			<meta name="title" content="Daniel Munoz"></meta>
+			<meta
+				name="description"
+				content="I'm a software engineer and designer."
+			></meta>
+			{/* Open Graph / Facebook */}
+			<meta property="og:type" content="website"></meta>
+			<meta property="og:url" content="https://ataricoder.com/"></meta>
+			<meta property="og:title" content="Daniel Munoz"></meta>
+			<meta
+				property="og:description"
+				content="I'm a software engineer and designer."
+			></meta>
+			<meta property="og:image" content="/meta_image.png"></meta>
+			{/* Twitter */}
+			<meta property="twitter:card" content="summary_large_image"></meta>
+			<meta
+				property="twitter:url"
+				content="https://ataricoder.com/"
+			></meta>
+			<meta property="twitter:title" content="Daniel Munoz"></meta>
+			<meta
+				property="twitter:description"
+				content="I'm a software engineer and designer."
+			></meta>
+			<meta property="twitter:image" content="/meta_image.png"></meta>
+			{/* Favicon */}
 			<link rel="shortcut icon" href="/favicon.png" />
 			<link
 				rel="preload"
