@@ -1,0 +1,23 @@
+.content {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.left {
+	border: 1px solid red;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	padding: 10px;
+}
+
+.right {
+	border: 1px solid red;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.preview {
+	border-radius: 0px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
