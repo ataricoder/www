@@ -21,7 +21,10 @@ const Layout = (props) => (
 				property="og:description"
 				content="I'm a software engineer and designer."
 			></meta>
-			<meta property="og:image" content="/meta_image.png"></meta>
+			<meta
+				property="og:image"
+				content="https://ataricoder.com/static/meta/meta_image.png"
+			></meta>
 			{/* Twitter */}
 			<meta property="twitter:card" content="summary_large_image"></meta>
 			<meta
@@ -33,7 +36,10 @@ const Layout = (props) => (
 				property="twitter:description"
 				content="I'm a software engineer and designer."
 			></meta>
-			<meta property="twitter:image" content="/meta_image.png"></meta>
+			<meta
+				property="twitter:image"
+				content="https://ataricoder.com/static/meta/meta_image.png"
+			></meta>
 			{/* Favicon */}
 			<link rel="shortcut icon" href="/favicon.png" />
 			<link
