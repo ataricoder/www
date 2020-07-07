@@ -10,6 +10,9 @@ const Image = styled.img`
 export default function About() {
 	return (
 		<Layout>
+			<Image width="100%" height="auto" src="/www_about.jpg"></Image>
+			<br />
+			<br />
 			<h1>Hey there! 👋</h1>
 			<p>
 				I'm a recent graduate from The University of Texas at Austin,
@@ -36,7 +39,6 @@ export default function About() {
 				did some freelance work to help put up new websites and improve
 				their SEO.
 			</p>
-			<Image width="100%" height="auto" src="/www_about.jpg"></Image>
 			<hr></hr>
 			<h1>Education</h1>
 			<Experience
