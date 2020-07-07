@@ -17,6 +17,23 @@ export default function Bookmarks() {
 			<li>https://paco.im/</li>
 			<li>https://shud.in/</li>
 			<li>https://karrisaarinen.com/</li>
+			<li>https://evilrabb.it</li>
+			<li>https://racuhg.com</li>
+			<li>https://alexmaccaw.com</li>
+			<li>https://danieldoes.design</li>
+			<li>https://ryo.lu</li>
+			<li>https://amandapinsker.com</li>
+			<li>https://andymatuschak.org</li>
+			<li>https://dustincurtis.com</li>
+			<li>https://www.s-j-zhang.com</li>
+			<li>https://www.kerem.co</li>
+			<li>https://leo.im</li>
+			<li>https://chibicode.com</li>
+			<li>https://www.hyumankind.com</li>
+			<li>https://www.arun.is</li>
+			<li>https://sarahdayan.dev</li>
+			<li>https://rsms.me</li>
+			<li>http://zcole.me</li>
 			<Bookmark
 				title="Brian Lovin"
 				description="Product designer"

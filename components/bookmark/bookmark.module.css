@@ -43,6 +43,10 @@
 	border-right: 1px solid #222222;
 }
 
+.title {
+	align-self: center;
+}
+
 .description {
 	font-size: 14px;
 	margin-bottom: 0;
