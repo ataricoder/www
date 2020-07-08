@@ -1,6 +1,5 @@
 import Layout from "@components/layout/layout";
 import Bookmark from "@components/bookmark/bookmark";
-import { Book } from "react-feather";
 
 export default function Bookmarks() {
 	return (
