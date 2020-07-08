@@ -27,6 +27,27 @@ export default function Bookmarks() {
 				preview=""
 				previewBool={false}
 			></Bookmark>
+			<Bookmark
+				title="Jordan Singer"
+				description="I build my ideas"
+				href="https://ibuildmyideas.com"
+				preview=""
+				previewBool={false}
+			></Bookmark>
+			<Bookmark
+				title="Karri Saarinen"
+				description="Karri Saarinen is a technically minded designer, speaker and entrepreneur who leads the design systems work at Airbnb."
+				href="https://ibuildmyideas.com"
+				preview="https://karrisaarinen.com/static/images/ks6.jpg"
+				previewBool={true}
+			></Bookmark>
+			<Bookmark
+				title="Evil Rabbit"
+				description="Hi, I'm Nicolás Garro, a.k.a Evil Rabbit."
+				href="https://evilrabb.it"
+				preview="https://dev.evilrabb.it/static/og-image.png"
+				previewBool={true}
+			></Bookmark>
 			<hr></hr>
 			<h2>Tools</h2>
 			<li>https://title.sh/</li>
@@ -34,11 +55,7 @@ export default function Bookmarks() {
 			<li>https://metatags.io/</li>
 			<hr></hr>
 			<h2>Portfolios</h2>
-			<li>https://ibuildmyideas.com/</li>
-			<li>https://shud.in/</li>
-			<li>https://karrisaarinen.com/</li>
-			<li>https://evilrabb.it</li>
-			<li>https://racuhg.com</li>
+			<li>https://rauchg.com</li>
 			<li>https://alexmaccaw.com</li>
 			<li>https://danieldoes.design</li>
 			<li>https://ryo.lu</li>
