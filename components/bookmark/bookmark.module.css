@@ -42,8 +42,8 @@
 	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
-.content:hover .left {
-	border-right-color: #ffffff;
+.content:hover .right {
+	border-left-color: #ffffff;
 }
 
 .content_alt:hover {
@@ -52,8 +52,8 @@
 	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 
-.content_alt:hover .left {
-	border-right-color: #ffffff;
+.content_alt:hover .right {
+	border-left-color: #ffffff;
 }
 
 .left {
