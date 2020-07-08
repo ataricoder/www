@@ -60,7 +60,10 @@
 	display: grid;
 	grid-template-rows: repeat(3, auto);
 	align-items: center;
-	border-right: 1px solid #222222;
+}
+
+.right {
+	border-left: 1px solid #222222;
 }
 
 .title {
