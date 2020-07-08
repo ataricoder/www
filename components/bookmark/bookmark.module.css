@@ -8,6 +8,16 @@
 	height: 140px;
 }
 
+.content_alt {
+	display: grid;
+	grid-template-columns: 100%;
+	border: 1px solid #222222;
+	border-radius: 8px;
+	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+	margin: 9px 0;
+	height: 140px;
+}
+
 .left {
 	padding: 10px;
 	height: 100%;
@@ -33,6 +43,16 @@
 }
 
 .content:hover .left {
+	border-right-color: #ffffff;
+}
+
+.content_alt:hover {
+	border-color: #ffffff;
+	text-decoration: none;
+	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+
+.content_alt:hover .left {
 	border-right-color: #ffffff;
 }
 
