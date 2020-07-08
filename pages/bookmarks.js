@@ -11,7 +11,7 @@ export default function Bookmarks() {
 			<li>https://static-tweet.now.sh/</li>
 			<li>https://metatags.io/</li>
 			<hr></hr>
-			<h2>Inspiration</h2>
+			<h2>Portfolios</h2>
 			<li>https://ibuildmyideas.com/</li>
 			<li>https://brianlovin.com/</li>
 			<li>https://paco.im/</li>
@@ -34,6 +34,11 @@ export default function Bookmarks() {
 			<li>https://sarahdayan.dev</li>
 			<li>https://rsms.me</li>
 			<li>http://zcole.me</li>
+			<li>https://ben.gold</li>
+			<li>Products</li>
+			<li>https://feyapp.com/</li>
+			<li>https://stripe.com/</li>
+			<li>https://vercel.com/home</li>
 			<Bookmark
 				title="Brian Lovin"
 				description="Product designer"

@@ -55,7 +55,7 @@
 }
 
 .href {
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 0;
 	bottom: 0px;
 	align-self: flex-end;
@@ -65,11 +65,16 @@
 	.content {
 		grid-template-columns: 100%;
 	}
-
 	.right {
 		display: none;
 	}
 	.left {
 		border-right: none;
+	}
+	.description {
+		font-size: 12px;
+	}
+	.href {
+		font-size: 12px;
 	}
 }
