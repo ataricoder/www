@@ -23,7 +23,7 @@ const Layout = (props) => (
 			></meta>
 			<meta
 				property="og:image"
-				content="https://ataricoder.com/static/meta/meta_image.png"
+				content="https://ataricoder.com/meta_image.png"
 			></meta>
 			{/* Twitter */}
 			<meta property="twitter:card" content="summary_large_image"></meta>
@@ -38,7 +38,7 @@ const Layout = (props) => (
 			></meta>
 			<meta
 				property="twitter:image"
-				content="https://ataricoder.com/static/meta/meta_image.png"
+				content="https://ataricoder.com/meta_image.png"
 			></meta>
 			{/* Favicon */}
 			<link rel="shortcut icon" href="/favicon.png" />
