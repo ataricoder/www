@@ -45,4 +45,14 @@
 	margin-bottom: 9px;
 	color: #888888;
 	font-size: 14px;
+	font-weight: 600;
+}
+
+@media (max-width: 991px) {
+	.description {
+		font-size: 14px;
+	}
+	.subtitle {
+		font-size: 12px;
+	}
 }
