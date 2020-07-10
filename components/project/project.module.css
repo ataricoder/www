@@ -6,6 +6,7 @@
 	grid-template-columns: 50% 50%;
 	overflow: hidden;
 	height: 200px;
+	max-height: 200px;
 	margin: 9px 0;
 }
 
@@ -49,6 +50,9 @@
 }
 
 @media (max-width: 991px) {
+	.content {
+		max-height: 110px;
+	}
 	.description {
 		display: none;
 	}
