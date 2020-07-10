@@ -6,6 +6,7 @@
 	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 	margin: 9px 0;
 	height: 140px;
+	background-color: #111111;
 }
 
 .content_alt {
@@ -16,6 +17,7 @@
 	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 	margin: 9px 0;
 	height: 140px;
+	background-color: #111111;
 }
 
 .left {

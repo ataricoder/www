@@ -28,9 +28,11 @@ const Buttons = styled.div`
 	column-gap: 10px;
 `;
 
-const Call = styled.p`
-	color: #68fdfe !important;
+const Call = styled.div`
 	font-weight: 600;
+	font-size: 16px;
+	color: #68fdfe;
+	margin-bottom: 18px;
 `;
 
 export default function Index({ recentPosts }) {
