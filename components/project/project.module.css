@@ -8,6 +8,7 @@
 	height: 200px;
 	max-height: 200px;
 	margin: 9px 0;
+	background-color: #111111;
 }
 
 .content:hover {
