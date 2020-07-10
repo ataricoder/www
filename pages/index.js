@@ -6,6 +6,7 @@ import Experience from "@components/experience/experience";
 import Position from "@components/experience/position/position";
 import styled from "styled-components";
 import { getSortedPostsData } from "../lib/posts";
+import { getSortedProjectsData } from "../lib/projects";
 import Link from "next/link";
 import Date from "@components/date/date";
 import Post from "@components/post/post";
@@ -13,9 +14,12 @@ import Post from "@components/post/post";
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
 	const recentPosts = allPostsData.sort((a, b) => b - a).slice(0, 3);
+	const allProjectsData = getSortedProjectsData();
+	const recentProjects = allProjectsData.sort((a, b) => b - a).slice(0, 3);
 	return {
 		props: {
 			recentPosts,
+			recentProjects,
 		},
 	};
 }
@@ -28,14 +32,14 @@ const Buttons = styled.div`
 	column-gap: 10px;
 `;
 
-const Call = styled.div`
+const Call = styled.p`
 	font-weight: 600;
 	font-size: 16px;
 	color: #68fdfe;
 	margin-bottom: 18px;
 `;
 
-export default function Index({ recentPosts }) {
+export default function Index({ recentPosts, recentProjects }) {
 	return (
 		<Layout>
 			<h1>Hey, I'm Daniel Munoz 👋</h1>
@@ -76,6 +80,27 @@ export default function Index({ recentPosts }) {
 				))}
 			</ul>
 			<Button href={"/blog"}>Read more</Button>
+			<hr></hr>
+			<h1>Projects</h1>
+			<p>This is some of the things I have worked on in the past.</p>
+			<ul>
+				{recentProjects.map(({ id, date, title, updated, preview }) => (
+					<ul key={id}>
+						<Link href="/projects/[id]" as={`/projects/${id}`}>
+							<Post
+								href="/projects/[id]"
+								as={`/projects/${id}`}
+								title={title}
+								date={date}
+								updated={updated}
+							>
+								{preview}
+							</Post>
+						</Link>
+					</ul>
+				))}
+			</ul>
+			<Button href={"/projects"}>More projects</Button>
 		</Layout>
 	);
 }

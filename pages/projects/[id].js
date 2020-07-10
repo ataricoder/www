@@ -1,10 +1,10 @@
 import Layout from "@components/layout/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllProjectsIds, getProjectData } from "../../lib/projects";
 import Head from "next/head";
 import Date from "@components/date/date";
 
 export async function getStaticPaths() {
-	const paths = getAllPostIds();
+	const paths = getAllProjectsIds();
 	return {
 		paths,
 		fallback: false,
@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const postData = await getPostData(params.id);
+	const postData = await getProjectData(params.id);
 	return {
 		props: {
 			postData,
