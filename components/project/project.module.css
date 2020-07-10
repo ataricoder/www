@@ -50,9 +50,6 @@
 
 @media (max-width: 991px) {
 	.description {
-		font-size: 14px;
-	}
-	.subtitle {
-		font-size: 12px;
+		display: none;
 	}
 }
