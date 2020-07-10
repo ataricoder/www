@@ -88,6 +88,7 @@ export default function Index({ recentPosts, recentProjects }) {
 									description={description}
 									image={image}
 									mobile={mobile}
+									href={`/projects/${id}`}
 								></Project>
 							</Link>
 						</ul>

@@ -4,7 +4,7 @@ const Project = (props) => {
 	switch (props.mobile) {
 		case true:
 			return (
-				<div className={styles.content}>
+				<a href={props.href} className={styles.content}>
 					<div className={styles.left}>
 						<h2>{props.title}</h2>
 						<p className={styles.subtitle}>{props.subtitle}</p>
@@ -18,11 +18,11 @@ const Project = (props) => {
 							src={props.image}
 						></img>
 					</div>
-				</div>
+				</a>
 			);
 		case false:
 			return (
-				<div className={styles.content}>
+				<a href={props.href} className={styles.content}>
 					<div className={styles.left}>
 						<h2>{props.title}</h2>
 						<p className={styles.subtitle}>{props.subtitle}</p>
@@ -36,7 +36,7 @@ const Project = (props) => {
 							src={props.image}
 						></img>
 					</div>
-				</div>
+				</a>
 			);
 	}
 };

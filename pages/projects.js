@@ -1,24 +1,39 @@
 import Layout from "@components/layout/layout";
 import Project from "@components/project/project";
+import { getSortedProjectsData } from "../lib/projects";
+import Link from "next/link";
 
-export default function Projects() {
+export async function getStaticProps() {
+	const allProjectsData = getSortedProjectsData();
+	return {
+		props: {
+			allProjectsData,
+		},
+	};
+}
+
+export default function Projects({ allProjectsData }) {
 	return (
 		<Layout>
 			<h1>Projects Page</h1>
-			<Project
-				title="Stripe"
-				subtitle="Web Application"
-				description="Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online."
-				image="/stripe_sample.png"
-				mobile={false}
-			></Project>
-			<Project
-				title="Cash App"
-				subtitle="iOS Application"
-				description="Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online."
-				image="/ecommerce_sample.png"
-				mobile={true}
-			></Project>
+			<ul>
+				{allProjectsData.map(
+					({ id, title, subtitle, description, image, mobile }) => (
+						<ul key={id}>
+							<Link href="/projects/[id]" as={`/projects/${id}`}>
+								<Project
+									title={title}
+									subtitle={subtitle}
+									description={description}
+									image={image}
+									mobile={mobile}
+									href={`/projects/${id}`}
+								></Project>
+							</Link>
+						</ul>
+					)
+				)}
+			</ul>
 		</Layout>
 	);
 }
