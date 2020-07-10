@@ -1,10 +1,10 @@
 ---
-priority: "1"
-title: "Stripe"
-subtitle: "Web Application"
+priority: "2"
+title: "Clean 'Em"
+subtitle: "iOS Application"
 description: "Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online."
-image: /stripe_sample.png
-mobile: false
+image: /ecommerce_sample.png
+mobile: true
 ---
 
 ![Ghost Next Blog](/ghost_next_test.png)

@@ -10,6 +10,7 @@ import { getSortedProjectsData } from "../lib/projects";
 import Link from "next/link";
 import Date from "@components/date/date";
 import Post from "@components/post/post";
+import Project from "@components/project/project";
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -32,13 +33,6 @@ const Buttons = styled.div`
 	column-gap: 10px;
 `;
 
-const Call = styled.p`
-	font-weight: 600;
-	font-size: 16px;
-	color: #68fdfe;
-	margin-bottom: 18px;
-`;
-
 export default function Index({ recentPosts, recentProjects }) {
 	return (
 		<Layout>
@@ -49,9 +43,9 @@ export default function Index({ recentPosts, recentProjects }) {
 				Science and Public Health. Did my pre-medical studies, but fell
 				in love with computers.
 			</p>
-			<Call>
+			<p style={{ color: "#68fdfe", fontWeight: "600" }}>
 				Right now I'm looking for software engineering opportunities.
-			</Call>
+			</p>
 			<Buttons>
 				<Button href={"/about"}>More about me</Button>
 				<Button href={"mailto:ataricoder@hey.com"}>Email me</Button>
@@ -84,21 +78,21 @@ export default function Index({ recentPosts, recentProjects }) {
 			<h1>Projects</h1>
 			<p>This is some of the things I have worked on in the past.</p>
 			<ul>
-				{recentProjects.map(({ id, date, title, updated, preview }) => (
-					<ul key={id}>
-						<Link href="/projects/[id]" as={`/projects/${id}`}>
-							<Post
-								href="/projects/[id]"
-								as={`/projects/${id}`}
-								title={title}
-								date={date}
-								updated={updated}
-							>
-								{preview}
-							</Post>
-						</Link>
-					</ul>
-				))}
+				{recentProjects.map(
+					({ id, title, subtitle, description, image, mobile }) => (
+						<ul key={id}>
+							<Link href="/projects/[id]" as={`/projects/${id}`}>
+								<Project
+									title={title}
+									subtitle={subtitle}
+									description={description}
+									image={image}
+									mobile={mobile}
+								></Project>
+							</Link>
+						</ul>
+					)
+				)}
 			</ul>
 			<Button href={"/projects"}>More projects</Button>
 		</Layout>
