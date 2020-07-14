@@ -16,6 +16,7 @@ export default function Projects({ allProjectsData }) {
 	return (
 		<Layout>
 			<h1>Projects Page</h1>
+			<p>This is some of the things I have worked on in the past.</p>
 			<ul>
 				{allProjectsData.map(
 					({ id, title, subtitle, description, image, mobile }) => (
