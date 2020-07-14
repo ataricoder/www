@@ -48,7 +48,7 @@ export default function Index({ recentPosts, recentProjects }) {
 			</p>
 			<Buttons>
 				<Button href={"/about"}>More about me</Button>
-				<Button href={"mailto:ataricoder@hey.com"}>Email me</Button>
+				<Button href={"mailto:ataricoder@gmail.com"}>Email me</Button>
 			</Buttons>
 			<hr></hr>
 			<h1>Blog</h1>

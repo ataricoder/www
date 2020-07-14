@@ -4,7 +4,7 @@
 	border: 1px solid #222222;
 	border-radius: 8px;
 	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-	margin: 9px 0;
+	margin-bottom: 18px;
 	height: 140px;
 	background-color: #111111;
 }
@@ -15,7 +15,7 @@
 	border: 1px solid #222222;
 	border-radius: 8px;
 	transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-	margin: 9px 0;
+	margin-bottom: 18px;
 	height: 140px;
 	background-color: #111111;
 }
