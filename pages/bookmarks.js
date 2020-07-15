@@ -5,7 +5,8 @@ export default function Bookmarks() {
 	return (
 		<Layout>
 			<h1>Bookmarks</h1>
-			<p>Portfolios and product pages that inspire me.</p>
+			<h4>Portfolios and product pages that inspire me.</h4>
+			<hr></hr>
 			<Bookmark
 				title="Brian Lovin"
 				description="Product designer"
@@ -195,9 +196,12 @@ export default function Bookmarks() {
 				preview="https://assets.vercel.com/image/upload/q_auto/front/vercel/home-2.png"
 				previewBool={true}
 			></Bookmark>
-			<hr></hr>
+			<br></br>
 			<h1>Tools</h1>
-			<p>Tools that I use that make engineering and designing better.</p>
+			<h4>
+				Tools that I use that make engineering and designing better.
+			</h4>
+			<hr></hr>
 			<Bookmark
 				title="https://title.sh/"
 				description="Capitalize Your Title"

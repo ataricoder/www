@@ -21,6 +21,7 @@ export default function Blog({ allPostsData }) {
 				This is where I write down ideas, opinions and more. Usually
 				about computer science, mathematics, medicine and design.
 			</h4>
+			<hr></hr>
 			<ul>
 				{allPostsData.map(({ id, date, title, updated, preview }) => (
 					<ul key={id}>
