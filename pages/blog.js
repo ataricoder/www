@@ -17,10 +17,10 @@ export default function Blog({ allPostsData }) {
 	return (
 		<Layout>
 			<h1>Blog</h1>
-			<p>
+			<h4>
 				This is where I write down ideas, opinions and more. Usually
 				about computer science, mathematics, medicine and design.
-			</p>
+			</h4>
 			<ul>
 				{allPostsData.map(({ id, date, title, updated, preview }) => (
 					<ul key={id}>
