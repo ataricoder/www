@@ -7,9 +7,7 @@ image: /solo_1.png
 mobile: false
 ---
 
-/solo_1.png
-
-<!---![Clean 'Em Web Application](/solo_1.png)--->
+[Clean 'Em Web Application](/solo_1.png)
 
 > Web platform for accessible, automated and affordable service bookings.
 
