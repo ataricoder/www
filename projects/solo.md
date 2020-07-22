@@ -29,7 +29,7 @@ I started working on Clean 'Em mainly on platform maintenance for the first vers
 - Digital Ocean Spaces, with AWS Boto3 for file storage (Similar to AWS S3, but keeping all data under Digital Ocean where other critical servers are being run).
 - MySQL as database, with MySQL Python Connector as driver.
 - Digital Ocean Database, where MySQL is being run.
-- Heroku for preview deployments, and Heroku CI to test preview applications.
+- [Heroku](https://www.heroku.com) for preview deployments, and Heroku CI to test preview applications.
 - Dependabot, to keep dependencies up-to-date.
 - Radar.io, to get location from the Pro while on a job.
 - Google Maps API, to create maps using Radar.io's returned information.
