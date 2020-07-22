@@ -22,7 +22,7 @@ I started working on Clean 'Em mainly on platform maintenance for the first vers
 - Let the users specify crucial instructions and tailor for their individual needs.
 - Ease the translation from a work order number to a certain booking.
 
-
+---
 # Implementation
 **Tools used:**
 - Python, with Flask as web framework.
@@ -35,4 +35,5 @@ I started working on Clean 'Em mainly on platform maintenance for the first vers
 - Google Maps API, to create maps using Radar.io's returned information.
 - Stripe, for payment processing.
 - JWT (JSON Web Tokens), to create user's sessions on the API.
+- Circle CI, for automated tests. We strive for every component to be tested to achieve 100% coverage.
 
